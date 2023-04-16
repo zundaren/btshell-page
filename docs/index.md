@@ -14,7 +14,7 @@ postList: none
 
 ## ⚡ 反馈与交流
 
-在使用过程中有任何问题和想法，请给我提 [Issue](https://github.com/zundaren/btshell/issues)。
+在使用过程中有任何问题和想法，请给我提 [Issue](https://github.com/zundaren/btshell-page/issues)。
 你也可以在Issue查看别人提的问题和给出解决方案。
 
 或者加入我们的交流群：
