@@ -6,7 +6,7 @@ const path = require('path'); // 路径模块
 const matter = require('gray-matter'); // front matter解析器 https://github.com/jonschlinkert/gray-matter
 const jsonToYaml = require('json2yaml')
 const yamlToJs = require('yamljs')
-const inquirer = require('inquirer') // 命令行操作
+const { confirm } = require('@inquirer/prompts') // Node 24 兼容的新 inquirer API
 const chalk = require('chalk') // 命令行打印美化
 const readFileList = require('./modules/readFileList');
 const { type, repairDate} = require('./modules/fn');
@@ -20,16 +20,9 @@ main();
  * 主体函数
  */
 async function main() {
-
-  const promptList = [{
-    type: "confirm",
+  const edit = await confirm({
     message: chalk.yellow('批量操作frontmatter有修改数据的风险，确定要继续吗？'),
-    name: "edit",
-  }];
-  let edit = true;
-
-  await inquirer.prompt(promptList).then(answers => {
-    edit = answers.edit
+    default: false,
   })
 
   if(!edit) { // 退出操作

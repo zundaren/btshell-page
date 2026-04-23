@@ -5,16 +5,19 @@
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
     "deploy": "bash deploy.sh",
-    "updateTheme": "yarn remove vuepress-theme-vdoing && rm -rf node_modules && yarn && yarn add vuepress-theme-vdoing -D",
+    "updateTheme": "npm install vuepress-theme-vdoing@latest -D",
     "editFm": "node utils/editFrontmatter.js",
     "baiduPush": "node utils/baiduPush.js https://xugaoyi.com && bash baiduPush.sh"
   },
   "license": "MIT",
+  "overrides": {
+    "lodash.template": "4.18.1"
+  },
   "devDependencies": {
-    "dayjs": "^1.9.7",
-    "inquirer": "^7.1.0",
+    "@inquirer/prompts": "^8.4.2",
+    "dayjs": "^1.11.20",
     "json2yaml": "^1.1.0",
-    "vuepress": "1.9.9",
+    "vuepress": "1.9.10",
     "vuepress-plugin-baidu-autopush": "^1.0.1",
     "vuepress-plugin-baidu-tongji": "^1.0.1",
     "vuepress-plugin-comment": "^0.7.3",
