@@ -300,6 +300,12 @@
   gap: 14px;
 }
 
+.image-stitch-toolbar {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) repeat(3, minmax(160px, 220px));
+  gap: 14px;
+}
+
 .image-toolbar__field,
 .image-config-field {
   display: flex;
@@ -353,6 +359,21 @@
   grid-column: 1 / -1;
 }
 
+.image-stitch-tips {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.image-stitch-tip {
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: rgba(17, 168, 205, 0.05);
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--textLightenColor);
+}
+
 .image-color-input {
   width: 100%;
   height: 46px;
@@ -384,6 +405,11 @@
 .image-preview.empty {
   font-size: 14px;
   color: var(--textLightenColor);
+}
+
+.image-preview--stitch {
+  align-items: stretch;
+  justify-content: stretch;
 }
 
 .image-preview__stage {
@@ -432,6 +458,74 @@
   background: #11a8cd;
   box-shadow: 0 0 0 2px rgba(17, 168, 205, 0.28);
   pointer-events: none;
+}
+
+.image-stitch-preview {
+  width: 100%;
+}
+
+.image-stitch-preview__viewport {
+  max-height: 520px;
+  overflow: auto;
+  padding: 4px;
+  border-radius: 12px;
+  background: rgba(17, 168, 205, 0.04);
+}
+
+.image-stitch-preview__stage {
+  position: relative;
+  min-width: 100px;
+}
+
+.image-stitch-cell {
+  position: absolute;
+  overflow: hidden;
+  border-radius: 12px;
+  background: rgba(17, 168, 205, 0.12);
+  box-shadow: inset 0 0 0 1px rgba(17, 168, 205, 0.16);
+  cursor: grab;
+  user-select: none;
+}
+
+.image-stitch-cell.is-active {
+  box-shadow: inset 0 0 0 2px #11a8cd, 0 0 0 2px rgba(17, 168, 205, 0.16);
+  cursor: grabbing;
+}
+
+.image-stitch-cell.is-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed rgba(17, 168, 205, 0.3);
+  background: rgba(17, 168, 205, 0.04);
+  color: var(--textLightenColor);
+  font-size: 12px;
+  cursor: default;
+}
+
+.image-stitch-cell img {
+  position: absolute;
+  max-width: none;
+  max-height: none;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: inherit;
+  pointer-events: none;
+}
+
+.image-stitch-cell__label {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  min-width: 22px;
+  height: 22px;
+  padding: 0 6px;
+  border-radius: 999px;
+  background: rgba(10, 22, 30, 0.66);
+  color: #fff;
+  font-size: 12px;
+  line-height: 22px;
+  text-align: center;
 }
 
 .image-lightbox {
@@ -921,6 +1015,7 @@
   }
 
   .config-converter-grid,
+  .image-stitch-toolbar,
   .video-toolbar,
   .video-settings-grid,
   .video-preview-grid,
