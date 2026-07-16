@@ -91,3 +91,40 @@ body .vuepress-plugin-demo-block__wrapper
   .highlight
     color: $accentColor
     font-weight: bold
+
+.home-wrapper .banner .hero .actions.hero-actions-double
+  display flex
+  align-items center
+  justify-content center
+  flex-wrap wrap
+  gap 12px
+  .action-button
+    margin 0
+  .action-button.secondary
+    color $accentColor
+    background transparent
+    border 1px solid $accentColor
+    box-shadow none
+    &:hover
+      color #fff
+      background $accentColor
+
+.theme-container.toolbox-page
+  .page
+    @media (min-width 720px)
+      padding-left 1rem !important
+      padding-right 1rem !important
+    > .theme-vdoing-wrapper
+      max-width 1480px
+      padding-left 1.5rem
+      padding-right 1.5rem
+      @media (max-width 959px)
+        padding-left 1rem
+        padding-right 1rem
+  .content-wrapper
+    width 100%
+  .theme-vdoing-content
+    max-width none
+    width 100%
+  h1
+    max-width none
