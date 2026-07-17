@@ -1,0 +1,1 @@
+{"slug":"arj","title":"arj","description":"用于创建和管理.arj压缩包","sourcePath":"data/linux-command/command/arj.md","markdown":"arj\r\n===\r\n\r\n用于创建和管理.arj压缩包\r\n\r\n## 补充说明\r\n\r\n**arj命令** 是 `.arj` 格式的压缩文件的管理器，用于创建和管理 `.arj` 压缩包。\r\n\r\n###  语法\r\n\r\n```shell\r\narj(参数)\r\n```\r\n\r\n###  参数\r\n\r\n*  操作指令：对  `.arj` 压缩包执行的操作指令；\r\n*  压缩包名称：指定要操作的arj压缩包名称。\r\n\r\n\r\n"}

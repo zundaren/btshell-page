@@ -1,0 +1,1 @@
+{"slug":"zfore","title":"zfore","description":"强制为gzip格式的压缩文件添加.gz后缀","sourcePath":"data/linux-command/command/zfore.md","markdown":"zfore\r\n===\r\n\r\n强制为gzip格式的压缩文件添加.gz后缀\r\n\r\n## 补充说明\r\n\r\n**zfore命令** 强制为gzip格式的压缩文件添加“.gz”后缀。\r\n\r\n###  语法\r\n\r\n```shell\r\nzfore(参数)\r\n```\r\n\r\n###  参数\r\n\r\n文件列表：指定要添加“.gz”后缀的gzip压缩文件。\r\n\r\n\r\n"}

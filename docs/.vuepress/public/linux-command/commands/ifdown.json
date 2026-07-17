@@ -1,0 +1,1 @@
+{"slug":"ifdown","title":"ifdown","description":"禁用指定的网络接口","sourcePath":"data/linux-command/command/ifdown.md","markdown":"ifdown\r\n===\r\n\r\n禁用指定的网络接口\r\n\r\n## 补充说明\r\n\r\n**ifdown命令** 用于禁用指定的网络接口。\r\n\r\n###  语法\r\n\r\n```shell\r\nifdown(参数)\r\n```\r\n\r\n###  参数\r\n\r\n网络接口：要禁用的网络接口。\r\n\r\n###  实例\r\n\r\n```shell\r\nifdown eth0  #禁用eth0\r\n```\r\n\r\n\r\n"}

@@ -1,0 +1,1 @@
+{"slug":"bye","title":"bye","description":"命令用于中断FTP连线并结束程序","sourcePath":"data/linux-command/command/bye.md","markdown":"bye\r\n===\r\n\r\n命令用于中断FTP连线并结束程序\r\n\r\n## 补充说明\r\n\r\n**bye命令** 在ftp模式下，输入bye即可中断目前的连线作业，并结束ftp的执行。\r\n\r\n\r\n###  语法\r\n\r\n```shell\r\nbye\r\n```\r\n\r\n### 实例\r\n\r\n```shell\r\nbye\r\n```"}

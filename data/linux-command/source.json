@@ -1,0 +1,10 @@
+{
+  "repo": "https://github.com/jaywcjlove/linux-command.git",
+  "syncedAt": "2026-07-17T02:15:58.649Z",
+  "commandCount": 621,
+  "sourceCommit": {
+    "hash": "6dd9b6dfb31803bbcb33f241a55d2fc2835b6fca",
+    "date": "2026-07-14T16:28:03+08:00",
+    "subject": "chore: 移除 Fakey 赞助商广告"
+  }
+}

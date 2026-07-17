@@ -1,3 +1,5 @@
+import 'mavon-editor/dist/css/index.css';
+
 const TOOLBOX_PATH = '/toolbox/';
 
 function withBase(base, path) {
@@ -31,7 +33,13 @@ function mountToolboxButton(router) {
   actions.insertBefore(link, actions.firstChild);
 }
 
-export default ({ router }) => {
+export default ({ Vue, router }) => {
+  if (typeof window !== 'undefined' && Vue && !Vue.__linuxCommandMavonInstalled) {
+    const mavonEditor = require('mavon-editor');
+    Vue.use(mavonEditor);
+    Vue.__linuxCommandMavonInstalled = true;
+  }
+
   if (typeof window === 'undefined') {
     return;
   }

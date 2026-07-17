@@ -1,0 +1,1 @@
+{"slug":"spell","title":"spell","description":"对文件进行拼写检查","sourcePath":"data/linux-command/command/spell.md","markdown":"spell\r\n===\r\n\r\n对文件进行拼写检查\r\n\r\n## 补充说明\r\n\r\n**spell命令** 对文件进行拼写检查，并把拼写错误的单词输出。\r\n\r\n###  语法\r\n\r\n```shell\r\nspell(参数)\r\n```\r\n\r\n###  参数\r\n\r\n文件：指定需要进行拼写检查的文件。\r\n\r\n\r\n"}

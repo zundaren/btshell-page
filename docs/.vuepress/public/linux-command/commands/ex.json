@@ -1,0 +1,1 @@
+{"slug":"ex","title":"ex","description":"启动vim编辑器的ex编辑模式","sourcePath":"data/linux-command/command/ex.md","markdown":"ex\r\n===\r\n\r\n启动vim编辑器的ex编辑模式\r\n\r\n## 补充说明\r\n\r\n在 **ex** 模式下启动vim文本编辑器。ex执行效果如同`vi -E`，适用于法及参数可参照vi指令，如要从Ex模式回到普通模式，则在vim中输入`:vi`或`:visual`即可。\r\n\r\n###  语法\r\n\r\n```shell\r\nex（参数）\r\n```\r\n\r\n###  参数\r\n\r\n文件：指定待编辑的文件。\r\n\r\n\r\n"}

@@ -1,0 +1,1 @@
+{"slug":"ypdomainname","title":"ypdomainname","description":"显示主机的NIS的域名","sourcePath":"data/linux-command/command/ypdomainname.md","markdown":"ypdomainname\r\n===\r\n\r\n显示主机的NIS的域名\r\n\r\n## 补充说明\r\n\r\n**ypdomainname命令** 显示主机的NIS的域名。\r\n\r\n###  语法\r\n\r\n```shell\r\nypdomainname(选项)\r\n```\r\n\r\n###  选项\r\n\r\n```shell\r\n-v：详细信息模式。\r\n```\r\n\r\n\r\n"}

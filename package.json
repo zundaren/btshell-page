@@ -2,8 +2,10 @@
   "name": "btshell",
   "version": "1.0.0",
   "scripts": {
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs",
+    "sync:linux-command": "node utils/syncLinuxCommand.js",
+    "build:linux-command-data": "node utils/generateLinuxCommandData.js",
+    "dev": "node utils/generateLinuxCommandData.js && vuepress dev docs",
+    "build": "node utils/generateLinuxCommandData.js && vuepress build docs",
     "deploy": "bash deploy.sh",
     "updateTheme": "npm install vuepress-theme-vdoing@latest -D",
     "editFm": "node utils/editFrontmatter.js",
@@ -35,6 +37,7 @@
     "gif.js.optimized": "^1.0.1",
     "jsonrepair": "^3.15.0",
     "jszip": "^3.10.1",
+    "mavon-editor": "^2.10.4",
     "qrcode": "^1.5.4"
   }
 }

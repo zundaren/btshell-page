@@ -1,0 +1,3742 @@
+{
+  "generatedAt": "2026-07-17T03:13:28.440Z",
+  "totalCommands": 621,
+  "metadata": {
+    "repo": "https://github.com/jaywcjlove/linux-command.git",
+    "syncedAt": "2026-07-17T02:15:58.649Z",
+    "commandCount": 621,
+    "sourceCommit": {
+      "hash": "6dd9b6dfb31803bbcb33f241a55d2fc2835b6fca",
+      "date": "2026-07-14T16:28:03+08:00",
+      "subject": "chore: 移除 Fakey 赞助商广告"
+    }
+  },
+  "commands": [
+    {
+      "slug": "7z",
+      "title": "7z",
+      "description": "拥有极高压缩比的开源压缩软件。",
+      "searchText": "7z 7z 拥有极高压缩比的开源压缩软件。"
+    },
+    {
+      "slug": "ab",
+      "title": "ab",
+      "description": "Apache服务器的性能测试工具",
+      "searchText": "ab ab apache服务器的性能测试工具"
+    },
+    {
+      "slug": "accept",
+      "title": "accept",
+      "description": "指示打印系统接受发往指定目标打印机的打印任务",
+      "searchText": "accept accept 指示打印系统接受发往指定目标打印机的打印任务"
+    },
+    {
+      "slug": "ack",
+      "title": "ack",
+      "description": "比grep好用的文本搜索工具",
+      "searchText": "ack ack 比grep好用的文本搜索工具"
+    },
+    {
+      "slug": "ag",
+      "title": "ag",
+      "description": "ack 的升级版，C语言编写，更快更人性化",
+      "searchText": "ag ag ack 的升级版，c语言编写，更快更人性化"
+    },
+    {
+      "slug": "alias",
+      "title": "alias",
+      "description": "定义或显示别名。",
+      "searchText": "alias alias 定义或显示别名。"
+    },
+    {
+      "slug": "ansible",
+      "title": "ansible",
+      "description": "自动化运维和配置管理工具",
+      "searchText": "ansible ansible 自动化运维和配置管理工具"
+    },
+    {
+      "slug": "apachectl",
+      "title": "apachectl",
+      "description": "Apache服务器前端控制工具",
+      "searchText": "apachectl apachectl apache服务器前端控制工具"
+    },
+    {
+      "slug": "apk",
+      "title": "apk",
+      "description": "Alpine Linux 下的包管理工具",
+      "searchText": "apk apk alpine linux 下的包管理工具"
+    },
+    {
+      "slug": "apropos",
+      "title": "apropos",
+      "description": "在 whatis 数据库中查找字符串",
+      "searchText": "apropos apropos 在 whatis 数据库中查找字符串"
+    },
+    {
+      "slug": "apt-get",
+      "title": "apt-get",
+      "description": "Debian Linux发行版中的APT软件包管理工具",
+      "searchText": "apt-get apt-get debian linux发行版中的apt软件包管理工具"
+    },
+    {
+      "slug": "apt-key",
+      "title": "apt-key",
+      "description": "管理Debian Linux系统中的软件包密钥",
+      "searchText": "apt-key apt-key 管理debian linux系统中的软件包密钥"
+    },
+    {
+      "slug": "apt-sortpkgs",
+      "title": "apt-sortpkgs",
+      "description": "Debian Linux下对软件包索引文件进行排序的工具",
+      "searchText": "apt-sortpkgs apt-sortpkgs debian linux下对软件包索引文件进行排序的工具"
+    },
+    {
+      "slug": "aptitude",
+      "title": "aptitude",
+      "description": "Debian Linux系统中软件包管理工具",
+      "searchText": "aptitude aptitude debian linux系统中软件包管理工具"
+    },
+    {
+      "slug": "ar",
+      "title": "ar",
+      "description": "建立或修改备存文件，或是从备存文件中抽取文件",
+      "searchText": "ar ar 建立或修改备存文件，或是从备存文件中抽取文件"
+    },
+    {
+      "slug": "arch",
+      "title": "arch",
+      "description": "显示当前主机的硬件架构类型",
+      "searchText": "arch arch 显示当前主机的硬件架构类型"
+    },
+    {
+      "slug": "arj",
+      "title": "arj",
+      "description": "用于创建和管理.arj压缩包",
+      "searchText": "arj arj 用于创建和管理.arj压缩包"
+    },
+    {
+      "slug": "arp",
+      "title": "arp",
+      "description": "arp 命令用于显示和修改 IP 到 MAC 转换表",
+      "searchText": "arp arp arp 命令用于显示和修改 ip 到 mac 转换表"
+    },
+    {
+      "slug": "arpd",
+      "title": "arpd",
+      "description": "收集免费ARP信息",
+      "searchText": "arpd arpd 收集免费arp信息"
+    },
+    {
+      "slug": "arping",
+      "title": "arping",
+      "description": "通过发送ARP协议报文测试网络",
+      "searchText": "arping arping 通过发送arp协议报文测试网络"
+    },
+    {
+      "slug": "arptables",
+      "title": "arptables",
+      "description": "管理ARP包过滤规则表",
+      "searchText": "arptables arptables 管理arp包过滤规则表"
+    },
+    {
+      "slug": "arpwatch",
+      "title": "arpwatch",
+      "description": "监听网络上ARP的记录",
+      "searchText": "arpwatch arpwatch 监听网络上arp的记录"
+    },
+    {
+      "slug": "as",
+      "title": "as",
+      "description": "汇编语言编译器",
+      "searchText": "as as 汇编语言编译器"
+    },
+    {
+      "slug": "at",
+      "title": "at",
+      "description": "在指定时间执行一个任务",
+      "searchText": "at at 在指定时间执行一个任务"
+    },
+    {
+      "slug": "atop",
+      "title": "atop",
+      "description": "监控Linux系统资源与进程的工具",
+      "searchText": "atop atop 监控linux系统资源与进程的工具"
+    },
+    {
+      "slug": "atq",
+      "title": "atq",
+      "description": "列出当前用户的at任务列表",
+      "searchText": "atq atq 列出当前用户的at任务列表"
+    },
+    {
+      "slug": "atrm",
+      "title": "atrm",
+      "description": "删除待执行任务队列中的指定任务",
+      "searchText": "atrm atrm 删除待执行任务队列中的指定任务"
+    },
+    {
+      "slug": "awk",
+      "title": "awk",
+      "description": "文本和数据进行处理的编程语言",
+      "searchText": "awk awk 文本和数据进行处理的编程语言"
+    },
+    {
+      "slug": "axel",
+      "title": "axel",
+      "description": "多线程下载工具",
+      "searchText": "axel axel 多线程下载工具"
+    },
+    {
+      "slug": "badblocks",
+      "title": "badblocks",
+      "description": "查找磁盘中损坏的区块",
+      "searchText": "badblocks badblocks 查找磁盘中损坏的区块"
+    },
+    {
+      "slug": "base64",
+      "title": "base64",
+      "description": "base64 编码/解码文件或标准输入输出",
+      "searchText": "base64 base64 base64 编码/解码文件或标准输入输出"
+    },
+    {
+      "slug": "basename",
+      "title": "basename",
+      "description": "打印目录或者文件的基本名称",
+      "searchText": "basename basename 打印目录或者文件的基本名称"
+    },
+    {
+      "slug": "batch",
+      "title": "batch",
+      "description": "在系统不繁忙的时候执行定时任务",
+      "searchText": "batch batch 在系统不繁忙的时候执行定时任务"
+    },
+    {
+      "slug": "bc",
+      "title": "bc",
+      "description": "算术操作精密运算工具",
+      "searchText": "bc bc 算术操作精密运算工具"
+    },
+    {
+      "slug": "beep",
+      "title": "beep",
+      "description": "用于控制 PC 扬声器发出蜂鸣声的命令行工具。",
+      "searchText": "beep beep 用于控制 pc 扬声器发出蜂鸣声的命令行工具。"
+    },
+    {
+      "slug": "bg",
+      "title": "bg",
+      "description": "将前台终端作业移动到后台运行",
+      "searchText": "bg bg 将前台终端作业移动到后台运行"
+    },
+    {
+      "slug": "bind",
+      "title": "bind",
+      "description": "显示或设置键盘按键与其相关的功能",
+      "searchText": "bind bind 显示或设置键盘按键与其相关的功能"
+    },
+    {
+      "slug": "blkid",
+      "title": "blkid",
+      "description": "查看块设备的文件系统类型、LABEL、UUID等信息",
+      "searchText": "blkid blkid 查看块设备的文件系统类型、label、uuid等信息"
+    },
+    {
+      "slug": "blockdev",
+      "title": "blockdev",
+      "description": "从命令行调用区块设备控制程序",
+      "searchText": "blockdev blockdev 从命令行调用区块设备控制程序"
+    },
+    {
+      "slug": "break",
+      "title": "break",
+      "description": "结束for，while或until循环。",
+      "searchText": "break break 结束for，while或until循环。"
+    },
+    {
+      "slug": "builtin",
+      "title": "builtin",
+      "description": "执行bash内建命令。",
+      "searchText": "builtin builtin 执行bash内建命令。"
+    },
+    {
+      "slug": "bunzip2",
+      "title": "bunzip2",
+      "description": "可解压缩.bz2格式的压缩文件。",
+      "searchText": "bunzip2 bunzip2 可解压缩.bz2格式的压缩文件。"
+    },
+    {
+      "slug": "bye",
+      "title": "bye",
+      "description": "命令用于中断FTP连线并结束程序",
+      "searchText": "bye bye 命令用于中断ftp连线并结束程序"
+    },
+    {
+      "slug": "bzcat",
+      "title": "bzcat",
+      "description": "不解压，直接查看指定的.bz2文件",
+      "searchText": "bzcat bzcat 不解压，直接查看指定的.bz2文件"
+    },
+    {
+      "slug": "bzcmp",
+      "title": "bzcmp",
+      "description": "比较两个压缩包中的文件",
+      "searchText": "bzcmp bzcmp 比较两个压缩包中的文件"
+    },
+    {
+      "slug": "bzdiff",
+      "title": "bzdiff",
+      "description": "直接比较两个.bz2压缩包中文件的不同",
+      "searchText": "bzdiff bzdiff 直接比较两个.bz2压缩包中文件的不同"
+    },
+    {
+      "slug": "bzgrep",
+      "title": "bzgrep",
+      "description": "使用正则表达式搜索.bz2压缩包中文件",
+      "searchText": "bzgrep bzgrep 使用正则表达式搜索.bz2压缩包中文件"
+    },
+    {
+      "slug": "bzip2",
+      "title": "bzip2",
+      "description": "将文件压缩成bz2格式",
+      "searchText": "bzip2 bzip2 将文件压缩成bz2格式"
+    },
+    {
+      "slug": "bzip2recover",
+      "title": "bzip2recover",
+      "description": "恢复被破坏的.bz2压缩包中的文件",
+      "searchText": "bzip2recover bzip2recover 恢复被破坏的.bz2压缩包中的文件"
+    },
+    {
+      "slug": "bzless",
+      "title": "bzless",
+      "description": "增强.bz2压缩包查看器",
+      "searchText": "bzless bzless 增强.bz2压缩包查看器"
+    },
+    {
+      "slug": "bzmore",
+      "title": "bzmore",
+      "description": "查看bzip2压缩过的文本文件的内容",
+      "searchText": "bzmore bzmore 查看bzip2压缩过的文本文件的内容"
+    },
+    {
+      "slug": "cal",
+      "title": "cal",
+      "description": "显示当前日历或指定日期的日历",
+      "searchText": "cal cal 显示当前日历或指定日期的日历"
+    },
+    {
+      "slug": "cancel",
+      "title": "cancel",
+      "description": "取消已存在的打印任务",
+      "searchText": "cancel cancel 取消已存在的打印任务"
+    },
+    {
+      "slug": "cat",
+      "title": "cat",
+      "description": "连接多个文件并打印到标准输出。",
+      "searchText": "cat cat 连接多个文件并打印到标准输出。"
+    },
+    {
+      "slug": "cd",
+      "title": "cd",
+      "description": "切换用户当前工作目录。",
+      "searchText": "cd cd 切换用户当前工作目录。"
+    },
+    {
+      "slug": "cdrecord",
+      "title": "cdrecord",
+      "description": "Linux系统下光盘刻录功能命令",
+      "searchText": "cdrecord cdrecord linux系统下光盘刻录功能命令"
+    },
+    {
+      "slug": "chage",
+      "title": "chage",
+      "description": "修改帐号和密码的有效期限",
+      "searchText": "chage chage 修改帐号和密码的有效期限"
+    },
+    {
+      "slug": "chattr",
+      "title": "chattr",
+      "description": "用来改变文件属性",
+      "searchText": "chattr chattr 用来改变文件属性"
+    },
+    {
+      "slug": "chcon",
+      "title": "chcon",
+      "description": "修改对象（文件）的安全上下文",
+      "searchText": "chcon chcon 修改对象（文件）的安全上下文"
+    },
+    {
+      "slug": "chfn",
+      "title": "chfn",
+      "description": "用来改变finger命令显示的信息",
+      "searchText": "chfn chfn 用来改变finger命令显示的信息"
+    },
+    {
+      "slug": "chgrp",
+      "title": "chgrp",
+      "description": "用来变更文件或目录的所属群组",
+      "searchText": "chgrp chgrp 用来变更文件或目录的所属群组"
+    },
+    {
+      "slug": "chkconfig",
+      "title": "chkconfig",
+      "description": "检查或设置系统的各种服务",
+      "searchText": "chkconfig chkconfig 检查或设置系统的各种服务"
+    },
+    {
+      "slug": "chmod",
+      "title": "chmod",
+      "description": "用来变更文件或目录的权限",
+      "searchText": "chmod chmod 用来变更文件或目录的权限"
+    },
+    {
+      "slug": "chown",
+      "title": "chown",
+      "description": "用来变更文件或目录的拥有者或所属群组",
+      "searchText": "chown chown 用来变更文件或目录的拥有者或所属群组"
+    },
+    {
+      "slug": "chpasswd",
+      "title": "chpasswd",
+      "description": "批量更新用户口令的工具",
+      "searchText": "chpasswd chpasswd 批量更新用户口令的工具"
+    },
+    {
+      "slug": "chroot",
+      "title": "chroot",
+      "description": "把根目录换成指定的目的目录",
+      "searchText": "chroot chroot 把根目录换成指定的目的目录"
+    },
+    {
+      "slug": "chsh",
+      "title": "chsh",
+      "description": "用来更换登录系统时使用的shell",
+      "searchText": "chsh chsh 用来更换登录系统时使用的shell"
+    },
+    {
+      "slug": "cksum",
+      "title": "cksum",
+      "description": "检查文件的CRC是否正确",
+      "searchText": "cksum cksum 检查文件的crc是否正确"
+    },
+    {
+      "slug": "clear",
+      "title": "clear",
+      "description": "清除当前屏幕终端上的任何信息",
+      "searchText": "clear clear 清除当前屏幕终端上的任何信息"
+    },
+    {
+      "slug": "clock",
+      "title": "clock",
+      "description": "用于调整 RTC 时间",
+      "searchText": "clock clock 用于调整 rtc 时间"
+    },
+    {
+      "slug": "clockdiff",
+      "title": "clockdiff",
+      "description": "检测两台linux主机的时间差",
+      "searchText": "clockdiff clockdiff 检测两台linux主机的时间差"
+    },
+    {
+      "slug": "cmp",
+      "title": "cmp",
+      "description": "比较两个文件是否有差异",
+      "searchText": "cmp cmp 比较两个文件是否有差异"
+    },
+    {
+      "slug": "col",
+      "title": "col",
+      "description": "过滤控制字符",
+      "searchText": "col col 过滤控制字符"
+    },
+    {
+      "slug": "colrm",
+      "title": "colrm",
+      "description": "删除文件中的指定列",
+      "searchText": "colrm colrm 删除文件中的指定列"
+    },
+    {
+      "slug": "column",
+      "title": "column",
+      "description": "按列格式化输出文件",
+      "searchText": "column column 按列格式化输出文件"
+    },
+    {
+      "slug": "comm",
+      "title": "comm",
+      "description": "按行比较两个已排序的文件。",
+      "searchText": "comm comm 按行比较两个已排序的文件。"
+    },
+    {
+      "slug": "command",
+      "title": "command",
+      "description": "调用并执行指定的命令",
+      "searchText": "command command 调用并执行指定的命令"
+    },
+    {
+      "slug": "compress",
+      "title": "compress",
+      "description": "使用Lempress-Ziv编码压缩数据文件",
+      "searchText": "compress compress 使用lempress-ziv编码压缩数据文件"
+    },
+    {
+      "slug": "consoletype",
+      "title": "consoletype",
+      "description": "输出已连接的终端类型",
+      "searchText": "consoletype consoletype 输出已连接的终端类型"
+    },
+    {
+      "slug": "continue",
+      "title": "continue",
+      "description": "结束本次循环，继续执行下一个for，while或until循环。",
+      "searchText": "continue continue 结束本次循环，继续执行下一个for，while或until循环。"
+    },
+    {
+      "slug": "convertquota",
+      "title": "convertquota",
+      "description": "把老的配额文件转换为新的格式",
+      "searchText": "convertquota convertquota 把老的配额文件转换为新的格式"
+    },
+    {
+      "slug": "cp",
+      "title": "cp",
+      "description": "将源文件或目录复制到目标文件或目录中",
+      "searchText": "cp cp 将源文件或目录复制到目标文件或目录中"
+    },
+    {
+      "slug": "cpio",
+      "title": "cpio",
+      "description": "用来建立、还原备份档的工具程序",
+      "searchText": "cpio cpio 用来建立、还原备份档的工具程序"
+    },
+    {
+      "slug": "createrepo",
+      "title": "createrepo",
+      "description": "创建YUM仓库",
+      "searchText": "createrepo createrepo 创建yum仓库"
+    },
+    {
+      "slug": "crontab",
+      "title": "crontab",
+      "description": "提交和管理用户的需要周期性执行的任务",
+      "searchText": "crontab crontab 提交和管理用户的需要周期性执行的任务"
+    },
+    {
+      "slug": "csplit",
+      "title": "csplit",
+      "description": "将一个大文件分割成小的碎片文件",
+      "searchText": "csplit csplit 将一个大文件分割成小的碎片文件"
+    },
+    {
+      "slug": "cu",
+      "title": "cu",
+      "description": "用于连接另一个系统主机",
+      "searchText": "cu cu 用于连接另一个系统主机"
+    },
+    {
+      "slug": "cupsdisable",
+      "title": "cupsdisable",
+      "description": "停止指定的打印机",
+      "searchText": "cupsdisable cupsdisable 停止指定的打印机"
+    },
+    {
+      "slug": "cupsenable",
+      "title": "cupsenable",
+      "description": "启动指定的打印机",
+      "searchText": "cupsenable cupsenable 启动指定的打印机"
+    },
+    {
+      "slug": "curl",
+      "title": "curl",
+      "description": "利用URL规则在命令行下工作的文件传输工具",
+      "searchText": "curl curl 利用url规则在命令行下工作的文件传输工具"
+    },
+    {
+      "slug": "cut",
+      "title": "cut",
+      "description": "连接文件并打印到标准输出设备上",
+      "searchText": "cut cut 连接文件并打印到标准输出设备上"
+    },
+    {
+      "slug": "date",
+      "title": "date",
+      "description": "显示或设置系统时间与日期",
+      "searchText": "date date 显示或设置系统时间与日期"
+    },
+    {
+      "slug": "dc",
+      "title": "dc",
+      "description": "任意精度计算器",
+      "searchText": "dc dc 任意精度计算器"
+    },
+    {
+      "slug": "dd",
+      "title": "dd",
+      "description": "复制文件并对原文件的内容进行转换和格式化处理",
+      "searchText": "dd dd 复制文件并对原文件的内容进行转换和格式化处理"
+    },
+    {
+      "slug": "declare",
+      "title": "declare",
+      "description": "声明变量，设置或显示变量的值和属性。",
+      "searchText": "declare declare 声明变量，设置或显示变量的值和属性。"
+    },
+    {
+      "slug": "depmod",
+      "title": "depmod",
+      "description": "分析可载入模块的相依性",
+      "searchText": "depmod depmod 分析可载入模块的相依性"
+    },
+    {
+      "slug": "df",
+      "title": "df",
+      "description": "显示磁盘的相关信息",
+      "searchText": "df df 显示磁盘的相关信息"
+    },
+    {
+      "slug": "dhclient",
+      "title": "dhclient",
+      "description": "动态获取或释放IP地址",
+      "searchText": "dhclient dhclient 动态获取或释放ip地址"
+    },
+    {
+      "slug": "dhcpd",
+      "title": "dhcpd",
+      "description": "运行DHCP服务器",
+      "searchText": "dhcpd dhcpd 运行dhcp服务器"
+    },
+    {
+      "slug": "dhcrelay",
+      "title": "dhcrelay",
+      "description": "使用dhcrelay命令可以提供中继DHCP和BOOTP请求",
+      "searchText": "dhcrelay dhcrelay 使用dhcrelay命令可以提供中继dhcp和bootp请求"
+    },
+    {
+      "slug": "diff",
+      "title": "diff",
+      "description": "比较给定的两个文件的不同",
+      "searchText": "diff diff 比较给定的两个文件的不同"
+    },
+    {
+      "slug": "diff3",
+      "title": "diff3",
+      "description": "比较3个文件不同的地方",
+      "searchText": "diff3 diff3 比较3个文件不同的地方"
+    },
+    {
+      "slug": "diffstat",
+      "title": "diffstat",
+      "description": "显示diff命令输出信息的柱状图",
+      "searchText": "diffstat diffstat 显示diff命令输出信息的柱状图"
+    },
+    {
+      "slug": "dig",
+      "title": "dig",
+      "description": "域名查询工具",
+      "searchText": "dig dig 域名查询工具"
+    },
+    {
+      "slug": "dircolors",
+      "title": "dircolors",
+      "description": "置ls命令在显示目录或文件时所用的色彩",
+      "searchText": "dircolors dircolors 置ls命令在显示目录或文件时所用的色彩"
+    },
+    {
+      "slug": "dirname",
+      "title": "dirname",
+      "description": "去除文件名中的非目录部分",
+      "searchText": "dirname dirname 去除文件名中的非目录部分"
+    },
+    {
+      "slug": "dirs",
+      "title": "dirs",
+      "description": "显示目录堆栈。",
+      "searchText": "dirs dirs 显示目录堆栈。"
+    },
+    {
+      "slug": "disown",
+      "title": "disown",
+      "description": "从当前的shell中移除作业。",
+      "searchText": "disown disown 从当前的shell中移除作业。"
+    },
+    {
+      "slug": "dmesg",
+      "title": "dmesg",
+      "description": "显示Linux系统启动信息",
+      "searchText": "dmesg dmesg 显示linux系统启动信息"
+    },
+    {
+      "slug": "dmidecode",
+      "title": "dmidecode",
+      "description": "在Linux系统下获取有关硬件方面的信息",
+      "searchText": "dmidecode dmidecode 在linux系统下获取有关硬件方面的信息"
+    },
+    {
+      "slug": "dnf",
+      "title": "dnf",
+      "description": "新一代的RPM软件包管理器",
+      "searchText": "dnf dnf 新一代的rpm软件包管理器"
+    },
+    {
+      "slug": "dnsdomainname",
+      "title": "dnsdomainname",
+      "description": "定义DNS系统中FQDN名称的域名",
+      "searchText": "dnsdomainname dnsdomainname 定义dns系统中fqdn名称的域名"
+    },
+    {
+      "slug": "docker",
+      "title": "docker",
+      "description": "容器化技术，可以将应用程序及其依赖项打包到一个可移植的容器中，使其可以在不同的环境中运行",
+      "searchText": "docker docker 容器化技术，可以将应用程序及其依赖项打包到一个可移植的容器中，使其可以在不同的环境中运行"
+    },
+    {
+      "slug": "domainname",
+      "title": "domainname",
+      "description": "显示和设置系统的NIS域名",
+      "searchText": "domainname domainname 显示和设置系统的nis域名"
+    },
+    {
+      "slug": "dos2unix",
+      "title": "dos2unix",
+      "description": "将DOS格式文本文件转换成Unix格式",
+      "searchText": "dos2unix dos2unix 将dos格式文本文件转换成unix格式"
+    },
+    {
+      "slug": "dpkg",
+      "title": "dpkg",
+      "description": "Debian Linux系统上安装、创建和管理软件包",
+      "searchText": "dpkg dpkg debian linux系统上安装、创建和管理软件包"
+    },
+    {
+      "slug": "dpkg-deb",
+      "title": "dpkg-deb",
+      "description": "Debian Linux下的软件包管理工具",
+      "searchText": "dpkg-deb dpkg-deb debian linux下的软件包管理工具"
+    },
+    {
+      "slug": "dpkg-divert",
+      "title": "dpkg-divert",
+      "description": "Debian Linux中创建并管理一个转向列表",
+      "searchText": "dpkg-divert dpkg-divert debian linux中创建并管理一个转向列表"
+    },
+    {
+      "slug": "dpkg-preconfigure",
+      "title": "dpkg-preconfigure",
+      "description": "Debian Linux中软件包安装之前询问问题",
+      "searchText": "dpkg-preconfigure dpkg-preconfigure debian linux中软件包安装之前询问问题"
+    },
+    {
+      "slug": "dpkg-query",
+      "title": "dpkg-query",
+      "description": "Debian Linux中软件包的查询工具",
+      "searchText": "dpkg-query dpkg-query debian linux中软件包的查询工具"
+    },
+    {
+      "slug": "dpkg-reconfigure",
+      "title": "dpkg-reconfigure",
+      "description": "Debian Linux中重新配制一个已经安装的软件包",
+      "searchText": "dpkg-reconfigure dpkg-reconfigure debian linux中重新配制一个已经安装的软件包"
+    },
+    {
+      "slug": "dpkg-split",
+      "title": "dpkg-split",
+      "description": "Debian Linux中将大软件包分割成小包",
+      "searchText": "dpkg-split dpkg-split debian linux中将大软件包分割成小包"
+    },
+    {
+      "slug": "dpkg-statoverride",
+      "title": "dpkg-statoverride",
+      "description": "Debian Linux中覆盖文件的所有权和模式",
+      "searchText": "dpkg-statoverride dpkg-statoverride debian linux中覆盖文件的所有权和模式"
+    },
+    {
+      "slug": "dpkg-trigger",
+      "title": "dpkg-trigger",
+      "description": "Debian Linux下的软件包触发器",
+      "searchText": "dpkg-trigger dpkg-trigger debian linux下的软件包触发器"
+    },
+    {
+      "slug": "dris",
+      "title": "dris",
+      "description": "显示和清空目录堆栈中的内容",
+      "searchText": "dris dris 显示和清空目录堆栈中的内容"
+    },
+    {
+      "slug": "dstat",
+      "title": "dstat",
+      "description": "通用的系统资源统计工具",
+      "searchText": "dstat dstat 通用的系统资源统计工具"
+    },
+    {
+      "slug": "du",
+      "title": "du",
+      "description": "显示每个文件和目录的磁盘使用空间",
+      "searchText": "du du 显示每个文件和目录的磁盘使用空间"
+    },
+    {
+      "slug": "dump",
+      "title": "dump",
+      "description": "用于备份ext2或者ext3文件系统",
+      "searchText": "dump dump 用于备份ext2或者ext3文件系统"
+    },
+    {
+      "slug": "e2fsck",
+      "title": "e2fsck",
+      "description": "用于检查第二扩展文件系统的完整性",
+      "searchText": "e2fsck e2fsck 用于检查第二扩展文件系统的完整性"
+    },
+    {
+      "slug": "e2label",
+      "title": "e2label",
+      "description": "设置第二扩展文件系统的卷标",
+      "searchText": "e2label e2label 设置第二扩展文件系统的卷标"
+    },
+    {
+      "slug": "echo",
+      "title": "echo",
+      "description": "输出指定的字符串或者变量",
+      "searchText": "echo echo 输出指定的字符串或者变量"
+    },
+    {
+      "slug": "ed",
+      "title": "ed",
+      "description": "单行纯文本编辑器",
+      "searchText": "ed ed 单行纯文本编辑器"
+    },
+    {
+      "slug": "edquota",
+      "title": "edquota",
+      "description": "用于编辑指定用户或工作组磁盘配额",
+      "searchText": "edquota edquota 用于编辑指定用户或工作组磁盘配额"
+    },
+    {
+      "slug": "egrep",
+      "title": "egrep",
+      "description": "在文件内查找指定的字符串",
+      "searchText": "egrep egrep 在文件内查找指定的字符串"
+    },
+    {
+      "slug": "eject",
+      "title": "eject",
+      "description": "用来退出抽取式设备",
+      "searchText": "eject eject 用来退出抽取式设备"
+    },
+    {
+      "slug": "elinks",
+      "title": "elinks",
+      "description": "纯文本界面的WWW浏览器",
+      "searchText": "elinks elinks 纯文本界面的www浏览器"
+    },
+    {
+      "slug": "elm",
+      "title": "elm",
+      "description": "纯文本邮件客户端程序",
+      "searchText": "elm elm 纯文本邮件客户端程序"
+    },
+    {
+      "slug": "emacs",
+      "title": "emacs",
+      "description": "功能强大的全屏文本编辑器",
+      "searchText": "emacs emacs 功能强大的全屏文本编辑器"
+    },
+    {
+      "slug": "enable",
+      "title": "enable",
+      "description": "启动或禁用shell内建命令",
+      "searchText": "enable enable 启动或禁用shell内建命令"
+    },
+    {
+      "slug": "env",
+      "title": "env",
+      "description": "显示系统中已存在的环境变量",
+      "searchText": "env env 显示系统中已存在的环境变量"
+    },
+    {
+      "slug": "ethtool",
+      "title": "ethtool",
+      "description": "显示或修改以太网卡的配置信息",
+      "searchText": "ethtool ethtool 显示或修改以太网卡的配置信息"
+    },
+    {
+      "slug": "ex",
+      "title": "ex",
+      "description": "启动vim编辑器的ex编辑模式",
+      "searchText": "ex ex 启动vim编辑器的ex编辑模式"
+    },
+    {
+      "slug": "exec",
+      "title": "exec",
+      "description": "调用并执行指定的命令",
+      "searchText": "exec exec 调用并执行指定的命令"
+    },
+    {
+      "slug": "exit",
+      "title": "exit",
+      "description": "退出当前的shell。",
+      "searchText": "exit exit 退出当前的shell。"
+    },
+    {
+      "slug": "expand",
+      "title": "expand",
+      "description": "将文件的制表符转换为空白字符",
+      "searchText": "expand expand 将文件的制表符转换为空白字符"
+    },
+    {
+      "slug": "export",
+      "title": "export",
+      "description": "为shell变量或函数设置导出属性。",
+      "searchText": "export export 为shell变量或函数设置导出属性。"
+    },
+    {
+      "slug": "exportfs",
+      "title": "exportfs",
+      "description": "管理NFS共享文件系统列表",
+      "searchText": "exportfs exportfs 管理nfs共享文件系统列表"
+    },
+    {
+      "slug": "expr",
+      "title": "expr",
+      "description": "一款表达式计算工具",
+      "searchText": "expr expr 一款表达式计算工具"
+    },
+    {
+      "slug": "false",
+      "title": "false",
+      "description": "返回状态为失败。",
+      "searchText": "false false 返回状态为失败。"
+    },
+    {
+      "slug": "fc",
+      "title": "fc",
+      "description": "显示历史列表中的命令或修改指定的历史命令并执行。",
+      "searchText": "fc fc 显示历史列表中的命令或修改指定的历史命令并执行。"
+    },
+    {
+      "slug": "fdisk",
+      "title": "fdisk",
+      "description": "查看磁盘使用情况和磁盘分区",
+      "searchText": "fdisk fdisk 查看磁盘使用情况和磁盘分区"
+    },
+    {
+      "slug": "fg",
+      "title": "fg",
+      "description": "将后台作业移动到前台终端运行",
+      "searchText": "fg fg 将后台作业移动到前台终端运行"
+    },
+    {
+      "slug": "fgrep",
+      "title": "fgrep",
+      "description": "为文件搜索文字字符串",
+      "searchText": "fgrep fgrep 为文件搜索文字字符串"
+    },
+    {
+      "slug": "figlet",
+      "title": "figlet",
+      "description": "字符串转为 “字画符”。",
+      "searchText": "figlet figlet 字符串转为 “字画符”。"
+    },
+    {
+      "slug": "file",
+      "title": "file",
+      "description": "用来探测给定文件的类型",
+      "searchText": "file file 用来探测给定文件的类型"
+    },
+    {
+      "slug": "find",
+      "title": "find",
+      "description": "在指定目录下查找文件",
+      "searchText": "find find 在指定目录下查找文件"
+    },
+    {
+      "slug": "findfs",
+      "title": "findfs",
+      "description": "标签或UUID查找文件系统",
+      "searchText": "findfs findfs 标签或uuid查找文件系统"
+    },
+    {
+      "slug": "finger",
+      "title": "finger",
+      "description": "用于查找并显示用户信息",
+      "searchText": "finger finger 用于查找并显示用户信息"
+    },
+    {
+      "slug": "firewall-cmd",
+      "title": "firewall-cmd",
+      "description": "Linux上新用的防火墙软件，跟iptables差不多的工具",
+      "searchText": "firewall-cmd firewall-cmd linux上新用的防火墙软件，跟iptables差不多的工具"
+    },
+    {
+      "slug": "firewalld",
+      "title": "firewalld",
+      "description": "动态防火墙管理器",
+      "searchText": "firewalld firewalld 动态防火墙管理器"
+    },
+    {
+      "slug": "fishshell",
+      "title": "fishshell",
+      "description": "比 bash 更好用的 shell",
+      "searchText": "fishshell fishshell 比 bash 更好用的 shell"
+    },
+    {
+      "slug": "fmt",
+      "title": "fmt",
+      "description": "读取文件后优化处理并输出",
+      "searchText": "fmt fmt 读取文件后优化处理并输出"
+    },
+    {
+      "slug": "fold",
+      "title": "fold",
+      "description": "控制文件内容输出时所占用的屏幕宽度",
+      "searchText": "fold fold 控制文件内容输出时所占用的屏幕宽度"
+    },
+    {
+      "slug": "fping",
+      "title": "fping",
+      "description": "fping检测主机是否存在",
+      "searchText": "fping fping fping检测主机是否存在"
+    },
+    {
+      "slug": "free",
+      "title": "free",
+      "description": "显示内存的使用情况",
+      "searchText": "free free 显示内存的使用情况"
+    },
+    {
+      "slug": "fsck",
+      "title": "fsck",
+      "description": "fsck（英文全拼：file system check）命令检查并且试图修复文件系统中的错误",
+      "searchText": "fsck fsck fsck（英文全拼：file system check）命令检查并且试图修复文件系统中的错误"
+    },
+    {
+      "slug": "ftp",
+      "title": "ftp",
+      "description": "用来设置文件系统相关功能",
+      "searchText": "ftp ftp 用来设置文件系统相关功能"
+    },
+    {
+      "slug": "ftpcount",
+      "title": "ftpcount",
+      "description": "显示目前已FTP登入的用户人数",
+      "searchText": "ftpcount ftpcount 显示目前已ftp登入的用户人数"
+    },
+    {
+      "slug": "ftpshut",
+      "title": "ftpshut",
+      "description": "在指定的时间关闭FTP服务器",
+      "searchText": "ftpshut ftpshut 在指定的时间关闭ftp服务器"
+    },
+    {
+      "slug": "ftptop",
+      "title": "ftptop",
+      "description": "proftpd服务器的连接状态",
+      "searchText": "ftptop ftptop proftpd服务器的连接状态"
+    },
+    {
+      "slug": "ftpwho",
+      "title": "ftpwho",
+      "description": "显示当前每个ftp会话信息",
+      "searchText": "ftpwho ftpwho 显示当前每个ftp会话信息"
+    },
+    {
+      "slug": "fuser",
+      "title": "fuser",
+      "description": "使用文件或文件结构识别进程",
+      "searchText": "fuser fuser 使用文件或文件结构识别进程"
+    },
+    {
+      "slug": "gcov",
+      "title": "gcov",
+      "description": "测试程序的代码覆盖率的工具",
+      "searchText": "gcov gcov 测试程序的代码覆盖率的工具"
+    },
+    {
+      "slug": "gdb",
+      "title": "gdb",
+      "description": "功能强大的程序调试器",
+      "searchText": "gdb gdb 功能强大的程序调试器"
+    },
+    {
+      "slug": "get_module",
+      "title": "get_module",
+      "description": "获取Linux内核模块的详细信息",
+      "searchText": "get_module get_module 获取linux内核模块的详细信息"
+    },
+    {
+      "slug": "getcap",
+      "title": "getcap",
+      "description": "显示文件的能力（capabilities）",
+      "searchText": "getcap getcap 显示文件的能力（capabilities）"
+    },
+    {
+      "slug": "getenforce",
+      "title": "getenforce",
+      "description": "显示当前SELinux的应用模式，是强制、执行还是停用",
+      "searchText": "getenforce getenforce 显示当前selinux的应用模式，是强制、执行还是停用"
+    },
+    {
+      "slug": "getent",
+      "title": "getent",
+      "description": "查询 DNS 名称服务器中的命名空间",
+      "searchText": "getent getent 查询 dns 名称服务器中的命名空间"
+    },
+    {
+      "slug": "getfacl",
+      "title": "getfacl",
+      "description": "获取文件访问控制列表(access control lists)",
+      "searchText": "getfacl getfacl 获取文件访问控制列表(access control lists)"
+    },
+    {
+      "slug": "getsebool",
+      "title": "getsebool",
+      "description": "查询SElinux策略内各项规则的布尔值",
+      "searchText": "getsebool getsebool 查询selinux策略内各项规则的布尔值"
+    },
+    {
+      "slug": "git",
+      "title": "git",
+      "description": "是目前世界上最先进的分布式版本控制系统",
+      "searchText": "git git 是目前世界上最先进的分布式版本控制系统"
+    },
+    {
+      "slug": "gpasswd",
+      "title": "gpasswd",
+      "description": "Linux下工作组文件的管理工具",
+      "searchText": "gpasswd gpasswd linux下工作组文件的管理工具"
+    },
+    {
+      "slug": "gpg",
+      "title": "gpg",
+      "description": "可用于签名、检查、加密或解密的工具",
+      "searchText": "gpg gpg 可用于签名、检查、加密或解密的工具"
+    },
+    {
+      "slug": "gpm",
+      "title": "gpm",
+      "description": "提供文字模式下的滑鼠事件处理",
+      "searchText": "gpm gpm 提供文字模式下的滑鼠事件处理"
+    },
+    {
+      "slug": "grep",
+      "title": "grep",
+      "description": "强大的文本搜索工具",
+      "searchText": "grep grep 强大的文本搜索工具"
+    },
+    {
+      "slug": "groupadd",
+      "title": "groupadd",
+      "description": "用于创建一个新的工作组",
+      "searchText": "groupadd groupadd 用于创建一个新的工作组"
+    },
+    {
+      "slug": "groupdel",
+      "title": "groupdel",
+      "description": "用于删除指定的工作组",
+      "searchText": "groupdel groupdel 用于删除指定的工作组"
+    },
+    {
+      "slug": "groupmems",
+      "title": "groupmems",
+      "description": "管理用户主要组的成员",
+      "searchText": "groupmems groupmems 管理用户主要组的成员"
+    },
+    {
+      "slug": "groupmod",
+      "title": "groupmod",
+      "description": "修改系统上的组定义",
+      "searchText": "groupmod groupmod 修改系统上的组定义"
+    },
+    {
+      "slug": "groups",
+      "title": "groups",
+      "description": "打印指定用户所在组的名称。",
+      "searchText": "groups groups 打印指定用户所在组的名称。"
+    },
+    {
+      "slug": "grpck",
+      "title": "grpck",
+      "description": "用于验证组文件的完整性",
+      "searchText": "grpck grpck 用于验证组文件的完整性"
+    },
+    {
+      "slug": "grpconv",
+      "title": "grpconv",
+      "description": "用来开启群组的投影密码",
+      "searchText": "grpconv grpconv 用来开启群组的投影密码"
+    },
+    {
+      "slug": "grpunconv",
+      "title": "grpunconv",
+      "description": "用来关闭群组的投影密码",
+      "searchText": "grpunconv grpunconv 用来关闭群组的投影密码"
+    },
+    {
+      "slug": "grub",
+      "title": "grub",
+      "description": "多重引导程序grub的命令行shell工具",
+      "searchText": "grub grub 多重引导程序grub的命令行shell工具"
+    },
+    {
+      "slug": "grub2-mkconfig",
+      "title": "grub2-mkconfig",
+      "description": "生成 grub.cfg 配置文件。",
+      "searchText": "grub2-mkconfig grub2-mkconfig 生成 grub.cfg 配置文件。"
+    },
+    {
+      "slug": "grub2-set-default",
+      "title": "grub2-set-default",
+      "description": "设置系统默认的启动内核",
+      "searchText": "grub2-set-default grub2-set-default 设置系统默认的启动内核"
+    },
+    {
+      "slug": "gunzip",
+      "title": "gunzip",
+      "description": "用来解压缩文件",
+      "searchText": "gunzip gunzip 用来解压缩文件"
+    },
+    {
+      "slug": "gzexe",
+      "title": "gzexe",
+      "description": "用来压缩可执行文件",
+      "searchText": "gzexe gzexe 用来压缩可执行文件"
+    },
+    {
+      "slug": "gzip",
+      "title": "gzip",
+      "description": "用来压缩文件",
+      "searchText": "gzip gzip 用来压缩文件"
+    },
+    {
+      "slug": "halt",
+      "title": "halt",
+      "description": "关闭正在运行的Linux操作系统",
+      "searchText": "halt halt 关闭正在运行的linux操作系统"
+    },
+    {
+      "slug": "hcitool",
+      "title": "hcitool",
+      "description": "hcitool是一个Linux命令行工具，用于管理和调试蓝牙设备。它可以用于扫描周围的蓝牙设备、连接到蓝牙设备发送命令和数据包等。",
+      "searchText": "hcitool hcitool hcitool是一个linux命令行工具，用于管理和调试蓝牙设备。它可以用于扫描周围的蓝牙设备、连接到蓝牙设备发送命令和数据包等。"
+    },
+    {
+      "slug": "hdparm",
+      "title": "hdparm",
+      "description": "显示与设定硬盘的参数",
+      "searchText": "hdparm hdparm 显示与设定硬盘的参数"
+    },
+    {
+      "slug": "head",
+      "title": "head",
+      "description": "显示文件的开头部分。",
+      "searchText": "head head 显示文件的开头部分。"
+    },
+    {
+      "slug": "helm",
+      "title": "helm",
+      "description": "Kubernetes包管理器",
+      "searchText": "helm helm kubernetes包管理器"
+    },
+    {
+      "slug": "help",
+      "title": "help",
+      "description": "该命令是bash内建命令，用于显示bash内建命令的帮助信息。",
+      "searchText": "help help 该命令是bash内建命令，用于显示bash内建命令的帮助信息。"
+    },
+    {
+      "slug": "hexdump",
+      "title": "hexdump",
+      "description": "显示文件十六进制格式",
+      "searchText": "hexdump hexdump 显示文件十六进制格式"
+    },
+    {
+      "slug": "history",
+      "title": "history",
+      "description": "显示或操作历史列表。",
+      "searchText": "history history 显示或操作历史列表。"
+    },
+    {
+      "slug": "host",
+      "title": "host",
+      "description": "常用的分析域名查询工具",
+      "searchText": "host host 常用的分析域名查询工具"
+    },
+    {
+      "slug": "hostid",
+      "title": "hostid",
+      "description": "显示当前主机的十六进制数字标识。",
+      "searchText": "hostid hostid 显示当前主机的十六进制数字标识。"
+    },
+    {
+      "slug": "hostname",
+      "title": "hostname",
+      "description": "显示和设置系统的主机名",
+      "searchText": "hostname hostname 显示和设置系统的主机名"
+    },
+    {
+      "slug": "hostnamectl",
+      "title": "hostnamectl",
+      "description": "查询或更改系统主机名",
+      "searchText": "hostnamectl hostnamectl 查询或更改系统主机名"
+    },
+    {
+      "slug": "hping3",
+      "title": "hping3",
+      "description": "测试网络及主机的安全",
+      "searchText": "hping3 hping3 测试网络及主机的安全"
+    },
+    {
+      "slug": "htdigest",
+      "title": "htdigest",
+      "description": "Apache服务器内置工具",
+      "searchText": "htdigest htdigest apache服务器内置工具"
+    },
+    {
+      "slug": "htop",
+      "title": "htop",
+      "description": "[非内部命令]一个互动的进程查看器，可以动态观察系统进程状况",
+      "searchText": "htop htop [非内部命令]一个互动的进程查看器，可以动态观察系统进程状况"
+    },
+    {
+      "slug": "htpasswd",
+      "title": "htpasswd",
+      "description": "apache服务器创建密码认证文件",
+      "searchText": "htpasswd htpasswd apache服务器创建密码认证文件"
+    },
+    {
+      "slug": "hwclock",
+      "title": "hwclock",
+      "description": "显示与设定硬件时钟",
+      "searchText": "hwclock hwclock 显示与设定硬件时钟"
+    },
+    {
+      "slug": "iconv",
+      "title": "iconv",
+      "description": "转换文件的编码方式",
+      "searchText": "iconv iconv 转换文件的编码方式"
+    },
+    {
+      "slug": "id",
+      "title": "id",
+      "description": "打印真实以及有效的用户和所在组的信息",
+      "searchText": "id id 打印真实以及有效的用户和所在组的信息"
+    },
+    {
+      "slug": "ifcfg",
+      "title": "ifcfg",
+      "description": "置Linux中的网络接口参数",
+      "searchText": "ifcfg ifcfg 置linux中的网络接口参数"
+    },
+    {
+      "slug": "ifconfig",
+      "title": "ifconfig",
+      "description": "配置和显示Linux系统网卡的网络参数",
+      "searchText": "ifconfig ifconfig 配置和显示linux系统网卡的网络参数"
+    },
+    {
+      "slug": "ifdown",
+      "title": "ifdown",
+      "description": "禁用指定的网络接口",
+      "searchText": "ifdown ifdown 禁用指定的网络接口"
+    },
+    {
+      "slug": "ifstat",
+      "title": "ifstat",
+      "description": "统计网络接口流量状态",
+      "searchText": "ifstat ifstat 统计网络接口流量状态"
+    },
+    {
+      "slug": "iftop",
+      "title": "iftop",
+      "description": "一款实时流量监控工具",
+      "searchText": "iftop iftop 一款实时流量监控工具"
+    },
+    {
+      "slug": "ifup",
+      "title": "ifup",
+      "description": "激活指定的网络接口",
+      "searchText": "ifup ifup 激活指定的网络接口"
+    },
+    {
+      "slug": "indent",
+      "title": "indent",
+      "description": "格式化C语言的源文件",
+      "searchText": "indent indent 格式化c语言的源文件"
+    },
+    {
+      "slug": "info",
+      "title": "info",
+      "description": "Linux下info格式的帮助指令",
+      "searchText": "info info linux下info格式的帮助指令"
+    },
+    {
+      "slug": "init",
+      "title": "init",
+      "description": "init进程是所有Linux进程的父进程",
+      "searchText": "init init init进程是所有linux进程的父进程"
+    },
+    {
+      "slug": "inotifywait",
+      "title": "inotifywait",
+      "description": "异步文件系统监控机制",
+      "searchText": "inotifywait inotifywait 异步文件系统监控机制"
+    },
+    {
+      "slug": "insmod",
+      "title": "insmod",
+      "description": "将给定的模块加载到内核中",
+      "searchText": "insmod insmod 将给定的模块加载到内核中"
+    },
+    {
+      "slug": "install",
+      "title": "install",
+      "description": "安装或升级软件或备份数据",
+      "searchText": "install install 安装或升级软件或备份数据"
+    },
+    {
+      "slug": "iostat",
+      "title": "iostat",
+      "description": "监视系统输入输出设备和CPU的使用情况",
+      "searchText": "iostat iostat 监视系统输入输出设备和cpu的使用情况"
+    },
+    {
+      "slug": "iotop",
+      "title": "iotop",
+      "description": "用来监视磁盘I/O使用状况的工具",
+      "searchText": "iotop iotop 用来监视磁盘i/o使用状况的工具"
+    },
+    {
+      "slug": "ip",
+      "title": "ip",
+      "description": "网络配置工具",
+      "searchText": "ip ip 网络配置工具"
+    },
+    {
+      "slug": "ip6tables",
+      "title": "ip6tables",
+      "description": "linux中防火墙软件",
+      "searchText": "ip6tables ip6tables linux中防火墙软件"
+    },
+    {
+      "slug": "ip6tables-restore",
+      "title": "ip6tables-restore",
+      "description": "还原ip6tables表",
+      "searchText": "ip6tables-restore ip6tables-restore 还原ip6tables表"
+    },
+    {
+      "slug": "ip6tables-save",
+      "title": "ip6tables-save",
+      "description": "保存ip6tables表配置",
+      "searchText": "ip6tables-save ip6tables-save 保存ip6tables表配置"
+    },
+    {
+      "slug": "ipcalc",
+      "title": "ipcalc",
+      "description": "简单的IP地址计算器",
+      "searchText": "ipcalc ipcalc 简单的ip地址计算器"
+    },
+    {
+      "slug": "ipcrm",
+      "title": "ipcrm",
+      "description": "删除消息队列、信号集、或者共享内存标识",
+      "searchText": "ipcrm ipcrm 删除消息队列、信号集、或者共享内存标识"
+    },
+    {
+      "slug": "ipcs",
+      "title": "ipcs",
+      "description": "分析消息队列共享内存和信号量",
+      "searchText": "ipcs ipcs 分析消息队列共享内存和信号量"
+    },
+    {
+      "slug": "iperf",
+      "title": "iperf",
+      "description": "网络性能测试工具",
+      "searchText": "iperf iperf 网络性能测试工具"
+    },
+    {
+      "slug": "iptables",
+      "title": "iptables",
+      "description": "Linux上常用的防火墙软件",
+      "searchText": "iptables iptables linux上常用的防火墙软件"
+    },
+    {
+      "slug": "iptables-restore",
+      "title": "iptables-restore",
+      "description": "还原iptables表的配置",
+      "searchText": "iptables-restore iptables-restore 还原iptables表的配置"
+    },
+    {
+      "slug": "iptables-save",
+      "title": "iptables-save",
+      "description": "备份iptables的表配置",
+      "searchText": "iptables-save iptables-save 备份iptables的表配置"
+    },
+    {
+      "slug": "iptraf",
+      "title": "iptraf",
+      "description": "实时地监视网卡流量",
+      "searchText": "iptraf iptraf 实时地监视网卡流量"
+    },
+    {
+      "slug": "iptstate",
+      "title": "iptstate",
+      "description": "显示iptables的工作状态",
+      "searchText": "iptstate iptstate 显示iptables的工作状态"
+    },
+    {
+      "slug": "iscsiadm",
+      "title": "iscsiadm",
+      "description": "管理iSCSI连接",
+      "searchText": "iscsiadm iscsiadm 管理iscsi连接"
+    },
+    {
+      "slug": "ispell",
+      "title": "ispell",
+      "description": "检查文件中出现的拼写错误",
+      "searchText": "ispell ispell 检查文件中出现的拼写错误"
+    },
+    {
+      "slug": "jed",
+      "title": "jed",
+      "description": "主要用于编辑代码的编辑器",
+      "searchText": "jed jed 主要用于编辑代码的编辑器"
+    },
+    {
+      "slug": "jobs",
+      "title": "jobs",
+      "description": "显示作业的状态。",
+      "searchText": "jobs jobs 显示作业的状态。"
+    },
+    {
+      "slug": "joe",
+      "title": "joe",
+      "description": "强大的纯文本编辑器",
+      "searchText": "joe joe 强大的纯文本编辑器"
+    },
+    {
+      "slug": "join",
+      "title": "join",
+      "description": "两个文件中指定栏位内容相同的行连接起来",
+      "searchText": "join join 两个文件中指定栏位内容相同的行连接起来"
+    },
+    {
+      "slug": "journalctl",
+      "title": "journalctl",
+      "description": "检索 systemd 日志，只要使用 systemd 的 Linux 发行版（如 Fedora、Ubuntu Modern、Debian、SUSE、Arch），几乎都会配备 journalctl。",
+      "searchText": "journalctl journalctl 检索 systemd 日志，只要使用 systemd 的 linux 发行版（如 fedora、ubuntu modern、debian、suse、arch），几乎都会配备 journalctl。"
+    },
+    {
+      "slug": "jq",
+      "title": "jq",
+      "description": "一个灵活的轻量级命令行JSON处理器",
+      "searchText": "jq jq 一个灵活的轻量级命令行json处理器"
+    },
+    {
+      "slug": "jwhois",
+      "title": "jwhois",
+      "description": "whois 客户端服务",
+      "searchText": "jwhois jwhois whois 客户端服务"
+    },
+    {
+      "slug": "kernelversion",
+      "title": "kernelversion",
+      "description": "打印当前内核的主版本号",
+      "searchText": "kernelversion kernelversion 打印当前内核的主版本号"
+    },
+    {
+      "slug": "kexec",
+      "title": "kexec",
+      "description": "从当前正在运行的内核引导到一个新内核",
+      "searchText": "kexec kexec 从当前正在运行的内核引导到一个新内核"
+    },
+    {
+      "slug": "kill",
+      "title": "kill",
+      "description": "发送信号到进程。",
+      "searchText": "kill kill 发送信号到进程。"
+    },
+    {
+      "slug": "killall",
+      "title": "killall",
+      "description": "使用进程的名称来杀死一组进程",
+      "searchText": "killall killall 使用进程的名称来杀死一组进程"
+    },
+    {
+      "slug": "kubectl",
+      "title": "kubectl",
+      "description": "Kubernetes集群管理工具",
+      "searchText": "kubectl kubectl kubernetes集群管理工具"
+    },
+    {
+      "slug": "l2ping",
+      "title": "l2ping",
+      "description": "收发 L2CAP 回显请求，用于检查与目标蓝牙设备的连通性。",
+      "searchText": "l2ping l2ping 收发 l2cap 回显请求，用于检查与目标蓝牙设备的连通性。"
+    },
+    {
+      "slug": "last",
+      "title": "last",
+      "description": "列出目前与过去登入系统的用户相关信息",
+      "searchText": "last last 列出目前与过去登入系统的用户相关信息"
+    },
+    {
+      "slug": "lastb",
+      "title": "lastb",
+      "description": "列出登入系统失败的用户相关信息",
+      "searchText": "lastb lastb 列出登入系统失败的用户相关信息"
+    },
+    {
+      "slug": "lastlog",
+      "title": "lastlog",
+      "description": "显示系统中所有用户最近一次登录信息",
+      "searchText": "lastlog lastlog 显示系统中所有用户最近一次登录信息"
+    },
+    {
+      "slug": "ld",
+      "title": "ld",
+      "description": "将目标文件连接为可执行程序",
+      "searchText": "ld ld 将目标文件连接为可执行程序"
+    },
+    {
+      "slug": "ldconfig",
+      "title": "ldconfig",
+      "description": "动态链接库管理命令",
+      "searchText": "ldconfig ldconfig 动态链接库管理命令"
+    },
+    {
+      "slug": "ldd",
+      "title": "ldd",
+      "description": "打印程序或者库文件所依赖的共享库列表",
+      "searchText": "ldd ldd 打印程序或者库文件所依赖的共享库列表"
+    },
+    {
+      "slug": "less",
+      "title": "less",
+      "description": "分屏上下翻页浏览文件内容",
+      "searchText": "less less 分屏上下翻页浏览文件内容"
+    },
+    {
+      "slug": "let",
+      "title": "let",
+      "description": "简单的计算器，执行算术表达式。",
+      "searchText": "let let 简单的计算器，执行算术表达式。"
+    },
+    {
+      "slug": "lftp",
+      "title": "lftp",
+      "description": "优秀的文件客户端程序",
+      "searchText": "lftp lftp 优秀的文件客户端程序"
+    },
+    {
+      "slug": "lftpget",
+      "title": "lftpget",
+      "description": "调用lftp指令下载指定的文件",
+      "searchText": "lftpget lftpget 调用lftp指令下载指定的文件"
+    },
+    {
+      "slug": "lha",
+      "title": "lha",
+      "description": "压缩或解压缩lzh格式文件",
+      "searchText": "lha lha 压缩或解压缩lzh格式文件"
+    },
+    {
+      "slug": "lilo",
+      "title": "lilo",
+      "description": "安装核心载入开机管理程序",
+      "searchText": "lilo lilo 安装核心载入开机管理程序"
+    },
+    {
+      "slug": "ln",
+      "title": "ln",
+      "description": "用来为文件创建链接",
+      "searchText": "ln ln 用来为文件创建链接"
+    },
+    {
+      "slug": "lnstat",
+      "title": "lnstat",
+      "description": "显示Linux系统的网路状态",
+      "searchText": "lnstat lnstat 显示linux系统的网路状态"
+    },
+    {
+      "slug": "local",
+      "title": "local",
+      "description": "在函数内定义局部变量。",
+      "searchText": "local local 在函数内定义局部变量。"
+    },
+    {
+      "slug": "locate",
+      "title": "locate",
+      "description": "比 find 好用的文件查找工具",
+      "searchText": "locate locate 比 find 好用的文件查找工具"
+    },
+    {
+      "slug": "logger",
+      "title": "logger",
+      "description": "在系统日志中记录相应条目",
+      "searchText": "logger logger 在系统日志中记录相应条目"
+    },
+    {
+      "slug": "login",
+      "title": "login",
+      "description": "登录系统或切换用户身份",
+      "searchText": "login login 登录系统或切换用户身份"
+    },
+    {
+      "slug": "logname",
+      "title": "logname",
+      "description": "打印当前终端登录用户的名称。",
+      "searchText": "logname logname 打印当前终端登录用户的名称。"
+    },
+    {
+      "slug": "logout",
+      "title": "logout",
+      "description": "退出当前登录的Shell",
+      "searchText": "logout logout 退出当前登录的shell"
+    },
+    {
+      "slug": "logrotate",
+      "title": "logrotate",
+      "description": "系统日志进行轮转、压缩和删除",
+      "searchText": "logrotate logrotate 系统日志进行轮转、压缩和删除"
+    },
+    {
+      "slug": "logsave",
+      "title": "logsave",
+      "description": "将命令的输出信息保存到指定的日志文件",
+      "searchText": "logsave logsave 将命令的输出信息保存到指定的日志文件"
+    },
+    {
+      "slug": "logwatch",
+      "title": "logwatch",
+      "description": "可定制和可插入式的日志监视系统",
+      "searchText": "logwatch logwatch 可定制和可插入式的日志监视系统"
+    },
+    {
+      "slug": "look",
+      "title": "look",
+      "description": "显示文件中以指定字符串开头的任意行",
+      "searchText": "look look 显示文件中以指定字符串开头的任意行"
+    },
+    {
+      "slug": "losetup",
+      "title": "losetup",
+      "description": "设定与控制循环（loop）设备",
+      "searchText": "losetup losetup 设定与控制循环（loop）设备"
+    },
+    {
+      "slug": "lp",
+      "title": "lp",
+      "description": "打印文件或修改排队的打印任务",
+      "searchText": "lp lp 打印文件或修改排队的打印任务"
+    },
+    {
+      "slug": "lpadmin",
+      "title": "lpadmin",
+      "description": "配置CUPS套件中的打印机和类",
+      "searchText": "lpadmin lpadmin 配置cups套件中的打印机和类"
+    },
+    {
+      "slug": "lpc",
+      "title": "lpc",
+      "description": "命令行方式打印机控制程序",
+      "searchText": "lpc lpc 命令行方式打印机控制程序"
+    },
+    {
+      "slug": "lpq",
+      "title": "lpq",
+      "description": "显示打印队列中的打印任务的状态信息",
+      "searchText": "lpq lpq 显示打印队列中的打印任务的状态信息"
+    },
+    {
+      "slug": "lpr",
+      "title": "lpr",
+      "description": "将文件发送给指定打印机进行打印",
+      "searchText": "lpr lpr 将文件发送给指定打印机进行打印"
+    },
+    {
+      "slug": "lprm",
+      "title": "lprm",
+      "description": "删除打印队列中的打印任务",
+      "searchText": "lprm lprm 删除打印队列中的打印任务"
+    },
+    {
+      "slug": "lpstat",
+      "title": "lpstat",
+      "description": "显示CUPS中打印机的状态信息",
+      "searchText": "lpstat lpstat 显示cups中打印机的状态信息"
+    },
+    {
+      "slug": "ls",
+      "title": "ls",
+      "description": "显示目录内容列表",
+      "searchText": "ls ls 显示目录内容列表"
+    },
+    {
+      "slug": "lsattr",
+      "title": "lsattr",
+      "description": "查看文件的第二扩展文件系统属性",
+      "searchText": "lsattr lsattr 查看文件的第二扩展文件系统属性"
+    },
+    {
+      "slug": "lsb_release",
+      "title": "lsb_release",
+      "description": "显示发行版本信息",
+      "searchText": "lsb_release lsb_release 显示发行版本信息"
+    },
+    {
+      "slug": "lsblk",
+      "title": "lsblk",
+      "description": "列出块设备信息",
+      "searchText": "lsblk lsblk 列出块设备信息"
+    },
+    {
+      "slug": "lscpu",
+      "title": "lscpu",
+      "description": "显示有关CPU架构的信息",
+      "searchText": "lscpu lscpu 显示有关cpu架构的信息"
+    },
+    {
+      "slug": "lsmod",
+      "title": "lsmod",
+      "description": "显示已载入系统的模块",
+      "searchText": "lsmod lsmod 显示已载入系统的模块"
+    },
+    {
+      "slug": "lsof",
+      "title": "lsof",
+      "description": "显示Linux系统当前已打开的所有文件列表 `lsof -p pid`",
+      "searchText": "lsof lsof 显示linux系统当前已打开的所有文件列表 `lsof -p pid`"
+    },
+    {
+      "slug": "lspci",
+      "title": "lspci",
+      "description": "显示当前主机的所有PCI总线信息",
+      "searchText": "lspci lspci 显示当前主机的所有pci总线信息"
+    },
+    {
+      "slug": "lsusb",
+      "title": "lsusb",
+      "description": "显示本机的USB设备列表信息",
+      "searchText": "lsusb lsusb 显示本机的usb设备列表信息"
+    },
+    {
+      "slug": "ltrace",
+      "title": "ltrace",
+      "description": "用来跟踪进程调用库函数的情况",
+      "searchText": "ltrace ltrace 用来跟踪进程调用库函数的情况"
+    },
+    {
+      "slug": "lvcreate",
+      "title": "lvcreate",
+      "description": "用于创建LVM的逻辑卷",
+      "searchText": "lvcreate lvcreate 用于创建lvm的逻辑卷"
+    },
+    {
+      "slug": "lvdisplay",
+      "title": "lvdisplay",
+      "description": "显示逻辑卷属性",
+      "searchText": "lvdisplay lvdisplay 显示逻辑卷属性"
+    },
+    {
+      "slug": "lvextend",
+      "title": "lvextend",
+      "description": "扩展逻辑卷空间",
+      "searchText": "lvextend lvextend 扩展逻辑卷空间"
+    },
+    {
+      "slug": "lvreduce",
+      "title": "lvreduce",
+      "description": "收缩逻辑卷空间",
+      "searchText": "lvreduce lvreduce 收缩逻辑卷空间"
+    },
+    {
+      "slug": "lvremove",
+      "title": "lvremove",
+      "description": "删除指定LVM逻辑卷",
+      "searchText": "lvremove lvremove 删除指定lvm逻辑卷"
+    },
+    {
+      "slug": "lvresize",
+      "title": "lvresize",
+      "description": "调整逻辑卷空间大小",
+      "searchText": "lvresize lvresize 调整逻辑卷空间大小"
+    },
+    {
+      "slug": "lvscan",
+      "title": "lvscan",
+      "description": "扫描逻辑卷",
+      "searchText": "lvscan lvscan 扫描逻辑卷"
+    },
+    {
+      "slug": "lynx",
+      "title": "lynx",
+      "description": "纯文本模式的网页浏览器",
+      "searchText": "lynx lynx 纯文本模式的网页浏览器"
+    },
+    {
+      "slug": "mail",
+      "title": "mail",
+      "description": "命令行下发送和接收电子邮件",
+      "searchText": "mail mail 命令行下发送和接收电子邮件"
+    },
+    {
+      "slug": "mailq",
+      "title": "mailq",
+      "description": "显示待发送的邮件队列",
+      "searchText": "mailq mailq 显示待发送的邮件队列"
+    },
+    {
+      "slug": "mailstat",
+      "title": "mailstat",
+      "description": "显示到达的邮件状态",
+      "searchText": "mailstat mailstat 显示到达的邮件状态"
+    },
+    {
+      "slug": "make",
+      "title": "make",
+      "description": "GNU的工程化编译工具",
+      "searchText": "make make gnu的工程化编译工具"
+    },
+    {
+      "slug": "man",
+      "title": "man",
+      "description": "查看Linux中的指令帮助",
+      "searchText": "man man 查看linux中的指令帮助"
+    },
+    {
+      "slug": "mapfile",
+      "title": "mapfile",
+      "description": "从标准输入读取行并赋值到数组。",
+      "searchText": "mapfile mapfile 从标准输入读取行并赋值到数组。"
+    },
+    {
+      "slug": "md5sum",
+      "title": "md5sum",
+      "description": "计算和校验文件报文摘要的工具程序",
+      "searchText": "md5sum md5sum 计算和校验文件报文摘要的工具程序"
+    },
+    {
+      "slug": "mesg",
+      "title": "mesg",
+      "description": "设置当前终端的写权限",
+      "searchText": "mesg mesg 设置当前终端的写权限"
+    },
+    {
+      "slug": "mii-tool",
+      "title": "mii-tool",
+      "description": "配置网络设备协商方式的工具",
+      "searchText": "mii-tool mii-tool 配置网络设备协商方式的工具"
+    },
+    {
+      "slug": "mkbootdisk",
+      "title": "mkbootdisk",
+      "description": "可建立目前系统的启动盘",
+      "searchText": "mkbootdisk mkbootdisk 可建立目前系统的启动盘"
+    },
+    {
+      "slug": "mkcert",
+      "title": "mkcert",
+      "description": "用来生成自签证书的工具",
+      "searchText": "mkcert mkcert 用来生成自签证书的工具"
+    },
+    {
+      "slug": "mkdir",
+      "title": "mkdir",
+      "description": "用来创建目录",
+      "searchText": "mkdir mkdir 用来创建目录"
+    },
+    {
+      "slug": "mke2fs",
+      "title": "mke2fs",
+      "description": "创建磁盘分区上的“etc2/etc3”文件系统",
+      "searchText": "mke2fs mke2fs 创建磁盘分区上的“etc2/etc3”文件系统"
+    },
+    {
+      "slug": "mkfs",
+      "title": "mkfs",
+      "description": "用于在设备上创建Linux文件系统",
+      "searchText": "mkfs mkfs 用于在设备上创建linux文件系统"
+    },
+    {
+      "slug": "mkinitrd",
+      "title": "mkinitrd",
+      "description": "建立要载入ramdisk的映像文件",
+      "searchText": "mkinitrd mkinitrd 建立要载入ramdisk的映像文件"
+    },
+    {
+      "slug": "mkisofs",
+      "title": "mkisofs",
+      "description": "建立ISO 9660映像文件",
+      "searchText": "mkisofs mkisofs 建立iso 9660映像文件"
+    },
+    {
+      "slug": "mknod",
+      "title": "mknod",
+      "description": "创建字符设备文件和块设备文件",
+      "searchText": "mknod mknod 创建字符设备文件和块设备文件"
+    },
+    {
+      "slug": "mkswap",
+      "title": "mkswap",
+      "description": "建立和设置SWAP交换分区",
+      "searchText": "mkswap mkswap 建立和设置swap交换分区"
+    },
+    {
+      "slug": "mktemp",
+      "title": "mktemp",
+      "description": "创建临时文件供shell脚本使用",
+      "searchText": "mktemp mktemp 创建临时文件供shell脚本使用"
+    },
+    {
+      "slug": "modetest",
+      "title": "modetest",
+      "description": "DRM/KMS驱动程序libdrm中的模式测试工具",
+      "searchText": "modetest modetest drm/kms驱动程序libdrm中的模式测试工具"
+    },
+    {
+      "slug": "modinfo",
+      "title": "modinfo",
+      "description": "显示给定模块的详细信息",
+      "searchText": "modinfo modinfo 显示给定模块的详细信息"
+    },
+    {
+      "slug": "modprobe",
+      "title": "modprobe",
+      "description": "自动处理可载入模块",
+      "searchText": "modprobe modprobe 自动处理可载入模块"
+    },
+    {
+      "slug": "more",
+      "title": "more",
+      "description": "显示文件内容，每次显示一屏",
+      "searchText": "more more 显示文件内容，每次显示一屏"
+    },
+    {
+      "slug": "mount",
+      "title": "mount",
+      "description": "用于挂载Linux系统外的文件",
+      "searchText": "mount mount 用于挂载linux系统外的文件"
+    },
+    {
+      "slug": "mpstat",
+      "title": "mpstat",
+      "description": "显示各个可用CPU的状态",
+      "searchText": "mpstat mpstat 显示各个可用cpu的状态"
+    },
+    {
+      "slug": "mtools",
+      "title": "mtools",
+      "description": "显示mtools支持的指令",
+      "searchText": "mtools mtools 显示mtools支持的指令"
+    },
+    {
+      "slug": "mtr",
+      "title": "mtr",
+      "description": "`mtr` 结合了 `traceroute` 和 `ping` 程序的功能，是一款简单的网络诊断工具",
+      "searchText": "mtr mtr `mtr` 结合了 `traceroute` 和 `ping` 程序的功能，是一款简单的网络诊断工具"
+    },
+    {
+      "slug": "mv",
+      "title": "mv",
+      "description": "用来对文件或目录重新命名",
+      "searchText": "mv mv 用来对文件或目录重新命名"
+    },
+    {
+      "slug": "mysql",
+      "title": "mysql",
+      "description": "MySQL服务器客户端工具",
+      "searchText": "mysql mysql mysql服务器客户端工具"
+    },
+    {
+      "slug": "mysqladmin",
+      "title": "mysqladmin",
+      "description": "MySQL服务器管理客户端",
+      "searchText": "mysqladmin mysqladmin mysql服务器管理客户端"
+    },
+    {
+      "slug": "mysqldump",
+      "title": "mysqldump",
+      "description": "MySQL数据库中备份工具",
+      "searchText": "mysqldump mysqldump mysql数据库中备份工具"
+    },
+    {
+      "slug": "mysqlimport",
+      "title": "mysqlimport",
+      "description": "为MySQL服务器用命令行方式导入数据",
+      "searchText": "mysqlimport mysqlimport 为mysql服务器用命令行方式导入数据"
+    },
+    {
+      "slug": "mysqlshow",
+      "title": "mysqlshow",
+      "description": "显示MySQL中数据库相关信息",
+      "searchText": "mysqlshow mysqlshow 显示mysql中数据库相关信息"
+    },
+    {
+      "slug": "named-checkzone",
+      "title": "named-checkzone",
+      "description": "使用 named-checkzone 可验证并转换区域文件，需指定区域名和文件名。",
+      "searchText": "named-checkzone named-checkzone 使用 named-checkzone 可验证并转换区域文件，需指定区域名和文件名。"
+    },
+    {
+      "slug": "nano",
+      "title": "nano",
+      "description": "字符终端文本编辑器",
+      "searchText": "nano nano 字符终端文本编辑器"
+    },
+    {
+      "slug": "nc",
+      "title": "nc",
+      "description": "nc是网络工具中的瑞士军刀",
+      "searchText": "nc nc nc是网络工具中的瑞士军刀"
+    },
+    {
+      "slug": "ncdu",
+      "title": "ncdu",
+      "description": "磁盘使用情况的交互式查看工具，可视为 du 的增强版本",
+      "searchText": "ncdu ncdu 磁盘使用情况的交互式查看工具，可视为 du 的增强版本"
+    },
+    {
+      "slug": "ncftp",
+      "title": "ncftp",
+      "description": "是增强的的FTP工具",
+      "searchText": "ncftp ncftp 是增强的的ftp工具"
+    },
+    {
+      "slug": "neofetch",
+      "title": "neofetch",
+      "description": "显示带有发行徽标的系统信息的工具",
+      "searchText": "neofetch neofetch 显示带有发行徽标的系统信息的工具"
+    },
+    {
+      "slug": "nethogs",
+      "title": "nethogs",
+      "description": "终端下的网络流量监控工具",
+      "searchText": "nethogs nethogs 终端下的网络流量监控工具"
+    },
+    {
+      "slug": "netstat",
+      "title": "netstat",
+      "description": "查看Linux中网络系统状态信息",
+      "searchText": "netstat netstat 查看linux中网络系统状态信息"
+    },
+    {
+      "slug": "newusers",
+      "title": "newusers",
+      "description": "用于批处理的方式一次创建多个命令",
+      "searchText": "newusers newusers 用于批处理的方式一次创建多个命令"
+    },
+    {
+      "slug": "nfsstat",
+      "title": "nfsstat",
+      "description": "列出NFS客户端和服务器的工作状态",
+      "searchText": "nfsstat nfsstat 列出nfs客户端和服务器的工作状态"
+    },
+    {
+      "slug": "ngrep",
+      "title": "ngrep",
+      "description": "方便的数据包匹配和显示工具",
+      "searchText": "ngrep ngrep 方便的数据包匹配和显示工具"
+    },
+    {
+      "slug": "nice",
+      "title": "nice",
+      "description": "调整程序执行的优先权等级",
+      "searchText": "nice nice 调整程序执行的优先权等级"
+    },
+    {
+      "slug": "nisdomainname",
+      "title": "nisdomainname",
+      "description": "显示主机NIS的域名",
+      "searchText": "nisdomainname nisdomainname 显示主机nis的域名"
+    },
+    {
+      "slug": "nl",
+      "title": "nl",
+      "description": "为每一个文件添加行号。",
+      "searchText": "nl nl 为每一个文件添加行号。"
+    },
+    {
+      "slug": "nm",
+      "title": "nm",
+      "description": "显示二进制目标文件的符号表",
+      "searchText": "nm nm 显示二进制目标文件的符号表"
+    },
+    {
+      "slug": "nmap",
+      "title": "nmap",
+      "description": "网络探测和安全审核",
+      "searchText": "nmap nmap 网络探测和安全审核"
+    },
+    {
+      "slug": "nmcli",
+      "title": "nmcli",
+      "description": "地址配置工具",
+      "searchText": "nmcli nmcli 地址配置工具"
+    },
+    {
+      "slug": "nmtui",
+      "title": "nmtui",
+      "description": "基于文本的用户界面（TUI），用于控制和配置 NetworkManager。",
+      "searchText": "nmtui nmtui 基于文本的用户界面（tui），用于控制和配置 networkmanager。"
+    },
+    {
+      "slug": "nohup",
+      "title": "nohup",
+      "description": "将程序以忽略挂起信号的方式运行起来",
+      "searchText": "nohup nohup 将程序以忽略挂起信号的方式运行起来"
+    },
+    {
+      "slug": "nologin",
+      "title": "nologin",
+      "description": "拒绝用户登录系统",
+      "searchText": "nologin nologin 拒绝用户登录系统"
+    },
+    {
+      "slug": "nproc",
+      "title": "nproc",
+      "description": "打印可用的处理器单元数量。",
+      "searchText": "nproc nproc 打印可用的处理器单元数量。"
+    },
+    {
+      "slug": "nslookup",
+      "title": "nslookup",
+      "description": "查询域名DNS信息的工具",
+      "searchText": "nslookup nslookup 查询域名dns信息的工具"
+    },
+    {
+      "slug": "nstat",
+      "title": "nstat",
+      "description": "nstat 是一个简单的监视内核的 SNMP 计数器和网络接口状态的实用工具。",
+      "searchText": "nstat nstat nstat 是一个简单的监视内核的 snmp 计数器和网络接口状态的实用工具。"
+    },
+    {
+      "slug": "ntpdate",
+      "title": "ntpdate",
+      "description": "使用网络计时协议（NTP）设置日期和时间",
+      "searchText": "ntpdate ntpdate 使用网络计时协议（ntp）设置日期和时间"
+    },
+    {
+      "slug": "ntsysv",
+      "title": "ntsysv",
+      "description": "集中管理系统的各种服务",
+      "searchText": "ntsysv ntsysv 集中管理系统的各种服务"
+    },
+    {
+      "slug": "objdump",
+      "title": "objdump",
+      "description": "显示二进制文件信息",
+      "searchText": "objdump objdump 显示二进制文件信息"
+    },
+    {
+      "slug": "od",
+      "title": "od",
+      "description": "输出文件的八进制、十六进制等格式编码的字节",
+      "searchText": "od od 输出文件的八进制、十六进制等格式编码的字节"
+    },
+    {
+      "slug": "openssl",
+      "title": "openssl",
+      "description": "强大的安全套接字层密码库",
+      "searchText": "openssl openssl 强大的安全套接字层密码库"
+    },
+    {
+      "slug": "pacman",
+      "title": "pacman",
+      "description": "Arch Linux 系统及其衍生系统中默认使用的包管理器",
+      "searchText": "pacman pacman arch linux 系统及其衍生系统中默认使用的包管理器"
+    },
+    {
+      "slug": "parted",
+      "title": "parted",
+      "description": "磁盘分区和分区大小调整工具",
+      "searchText": "parted parted 磁盘分区和分区大小调整工具"
+    },
+    {
+      "slug": "partprobe",
+      "title": "partprobe",
+      "description": "不重启的情况下重读分区",
+      "searchText": "partprobe partprobe 不重启的情况下重读分区"
+    },
+    {
+      "slug": "passwd",
+      "title": "passwd",
+      "description": "用于让用户可以更改自己的密码",
+      "searchText": "passwd passwd 用于让用户可以更改自己的密码"
+    },
+    {
+      "slug": "paste",
+      "title": "paste",
+      "description": "将多个文件按列队列合并",
+      "searchText": "paste paste 将多个文件按列队列合并"
+    },
+    {
+      "slug": "patch",
+      "title": "patch",
+      "description": "为开放源代码软件安装补丁程序",
+      "searchText": "patch patch 为开放源代码软件安装补丁程序"
+    },
+    {
+      "slug": "pathchk",
+      "title": "pathchk",
+      "description": "检查文件中不可移植的部分",
+      "searchText": "pathchk pathchk 检查文件中不可移植的部分"
+    },
+    {
+      "slug": "perl",
+      "title": "perl",
+      "description": "perl语言解释器",
+      "searchText": "perl perl perl语言解释器"
+    },
+    {
+      "slug": "pfctl",
+      "title": "pfctl",
+      "description": "PF防火墙的配置命令",
+      "searchText": "pfctl pfctl pf防火墙的配置命令"
+    },
+    {
+      "slug": "pgrep",
+      "title": "pgrep",
+      "description": "根据用户给出的信息在当前运行进程中查找并列出符合条件的进程ID（PID）",
+      "searchText": "pgrep pgrep 根据用户给出的信息在当前运行进程中查找并列出符合条件的进程id（pid）"
+    },
+    {
+      "slug": "php",
+      "title": "php",
+      "description": "PHP语言的命令行接口",
+      "searchText": "php php php语言的命令行接口"
+    },
+    {
+      "slug": "pico",
+      "title": "pico",
+      "description": "功能强大全屏幕的文本编辑器",
+      "searchText": "pico pico 功能强大全屏幕的文本编辑器"
+    },
+    {
+      "slug": "pidof",
+      "title": "pidof",
+      "description": "查找指定名称的进程的进程号ID号",
+      "searchText": "pidof pidof 查找指定名称的进程的进程号id号"
+    },
+    {
+      "slug": "pidstat",
+      "title": "pidstat",
+      "description": "监控进程的系统资源占用情况",
+      "searchText": "pidstat pidstat 监控进程的系统资源占用情况"
+    },
+    {
+      "slug": "pigz",
+      "title": "pigz",
+      "description": "可以用来解压缩文件，gzip的并行实现升级版",
+      "searchText": "pigz pigz 可以用来解压缩文件，gzip的并行实现升级版"
+    },
+    {
+      "slug": "ping",
+      "title": "ping",
+      "description": "测试主机之间网络的连通性(ipv4)",
+      "searchText": "ping ping 测试主机之间网络的连通性(ipv4)"
+    },
+    {
+      "slug": "ping6",
+      "title": "ping6",
+      "description": "测试主机之间网络的连通性(ipv6)",
+      "searchText": "ping6 ping6 测试主机之间网络的连通性(ipv6)"
+    },
+    {
+      "slug": "pip",
+      "title": "pip",
+      "description": "Python 编程语言中的包管理器，用于安装和管理第三方 Python 模块",
+      "searchText": "pip pip python 编程语言中的包管理器，用于安装和管理第三方 python 模块"
+    },
+    {
+      "slug": "pkexec",
+      "title": "pkexec",
+      "description": "以其他用户身份执行命令",
+      "searchText": "pkexec pkexec 以其他用户身份执行命令"
+    },
+    {
+      "slug": "pkill",
+      "title": "pkill",
+      "description": "可以按照进程名杀死进程",
+      "searchText": "pkill pkill 可以按照进程名杀死进程"
+    },
+    {
+      "slug": "pmap",
+      "title": "pmap",
+      "description": "报告进程的内存映射关系",
+      "searchText": "pmap pmap 报告进程的内存映射关系"
+    },
+    {
+      "slug": "popd",
+      "title": "popd",
+      "description": "从目录堆栈中删除目录。",
+      "searchText": "popd popd 从目录堆栈中删除目录。"
+    },
+    {
+      "slug": "poweroff",
+      "title": "poweroff",
+      "description": "关闭Linux系统，关闭记录会被写入到/var/log/wtmp日志文件中",
+      "searchText": "poweroff poweroff 关闭linux系统，关闭记录会被写入到/var/log/wtmp日志文件中"
+    },
+    {
+      "slug": "ppp-off",
+      "title": "ppp-off",
+      "description": "关闭ppp连线",
+      "searchText": "ppp-off ppp-off 关闭ppp连线"
+    },
+    {
+      "slug": "pr",
+      "title": "pr",
+      "description": "将文本文件转换成适合打印的格式",
+      "searchText": "pr pr 将文本文件转换成适合打印的格式"
+    },
+    {
+      "slug": "printf",
+      "title": "printf",
+      "description": "格式化并输出结果。",
+      "searchText": "printf printf 格式化并输出结果。"
+    },
+    {
+      "slug": "protoize",
+      "title": "protoize",
+      "description": "GNU-C代码转换为ANSI-C代码",
+      "searchText": "protoize protoize gnu-c代码转换为ansi-c代码"
+    },
+    {
+      "slug": "prtstat",
+      "title": "prtstat",
+      "description": "显示进程信息",
+      "searchText": "prtstat prtstat 显示进程信息"
+    },
+    {
+      "slug": "ps",
+      "title": "ps",
+      "description": "报告当前系统的进程状态",
+      "searchText": "ps ps 报告当前系统的进程状态"
+    },
+    {
+      "slug": "pssh",
+      "title": "pssh",
+      "description": "批量管理执行",
+      "searchText": "pssh pssh 批量管理执行"
+    },
+    {
+      "slug": "pstack",
+      "title": "pstack",
+      "description": "显示每个进程的栈跟踪",
+      "searchText": "pstack pstack 显示每个进程的栈跟踪"
+    },
+    {
+      "slug": "pstree",
+      "title": "pstree",
+      "description": "以树状图的方式展现进程之间的派生关系",
+      "searchText": "pstree pstree 以树状图的方式展现进程之间的派生关系"
+    },
+    {
+      "slug": "gcc",
+      "title": "pullgcc",
+      "description": "基于C/C++的编译器",
+      "searchText": "gcc pullgcc 基于c/c++的编译器"
+    },
+    {
+      "slug": "pushd",
+      "title": "pushd",
+      "description": "将目录添加到目录堆栈顶部。",
+      "searchText": "pushd pushd 将目录添加到目录堆栈顶部。"
+    },
+    {
+      "slug": "pv",
+      "title": "pv",
+      "description": "显示当前在命令行执行的命令的进度信息，管道查看器",
+      "searchText": "pv pv 显示当前在命令行执行的命令的进度信息，管道查看器"
+    },
+    {
+      "slug": "pvchange",
+      "title": "pvchange",
+      "description": "修改物理卷属性",
+      "searchText": "pvchange pvchange 修改物理卷属性"
+    },
+    {
+      "slug": "pvck",
+      "title": "pvck",
+      "description": "检测物理卷的LVM元数据的一致性",
+      "searchText": "pvck pvck 检测物理卷的lvm元数据的一致性"
+    },
+    {
+      "slug": "pvcreate",
+      "title": "pvcreate",
+      "description": "将物理硬盘分区初始化为物理卷",
+      "searchText": "pvcreate pvcreate 将物理硬盘分区初始化为物理卷"
+    },
+    {
+      "slug": "pvdisplay",
+      "title": "pvdisplay",
+      "description": "显示物理卷的属性",
+      "searchText": "pvdisplay pvdisplay 显示物理卷的属性"
+    },
+    {
+      "slug": "pvremove",
+      "title": "pvremove",
+      "description": "删除一个存在的物理卷",
+      "searchText": "pvremove pvremove 删除一个存在的物理卷"
+    },
+    {
+      "slug": "pvs",
+      "title": "pvs",
+      "description": "输出物理卷信息报表",
+      "searchText": "pvs pvs 输出物理卷信息报表"
+    },
+    {
+      "slug": "pvscan",
+      "title": "pvscan",
+      "description": "扫描系统中所有硬盘的物理卷列表",
+      "searchText": "pvscan pvscan 扫描系统中所有硬盘的物理卷列表"
+    },
+    {
+      "slug": "pwck",
+      "title": "pwck",
+      "description": "用来验证系统认证文件内容和格式的完整性",
+      "searchText": "pwck pwck 用来验证系统认证文件内容和格式的完整性"
+    },
+    {
+      "slug": "pwconv",
+      "title": "pwconv",
+      "description": "用来开启用户的投影密码",
+      "searchText": "pwconv pwconv 用来开启用户的投影密码"
+    },
+    {
+      "slug": "pwd",
+      "title": "pwd",
+      "description": "显示当前工作目录的绝对路径。",
+      "searchText": "pwd pwd 显示当前工作目录的绝对路径。"
+    },
+    {
+      "slug": "pwdx",
+      "title": "pwdx",
+      "description": "用于显示指定进程的当前工作目录",
+      "searchText": "pwdx pwdx 用于显示指定进程的当前工作目录"
+    },
+    {
+      "slug": "pwunconv",
+      "title": "pwunconv",
+      "description": "用来关闭用户的投影密码",
+      "searchText": "pwunconv pwunconv 用来关闭用户的投影密码"
+    },
+    {
+      "slug": "quota",
+      "title": "quota",
+      "description": "显示磁盘已使用的空间与限制",
+      "searchText": "quota quota 显示磁盘已使用的空间与限制"
+    },
+    {
+      "slug": "quotacheck",
+      "title": "quotacheck",
+      "description": "检查磁盘的使用空间与限制",
+      "searchText": "quotacheck quotacheck 检查磁盘的使用空间与限制"
+    },
+    {
+      "slug": "quotaoff",
+      "title": "quotaoff",
+      "description": "关闭Linux内核中指定文件系统的磁盘配额功能",
+      "searchText": "quotaoff quotaoff 关闭linux内核中指定文件系统的磁盘配额功能"
+    },
+    {
+      "slug": "quotaon",
+      "title": "quotaon",
+      "description": "激活Linux内核中指定文件系统的磁盘配额功能",
+      "searchText": "quotaon quotaon 激活linux内核中指定文件系统的磁盘配额功能"
+    },
+    {
+      "slug": "rcconf",
+      "title": "rcconf",
+      "description": "Debian Linux下的运行等级服务配置工具",
+      "searchText": "rcconf rcconf debian linux下的运行等级服务配置工具"
+    },
+    {
+      "slug": "rcp",
+      "title": "rcp",
+      "description": "使在两台Linux主机之间的文件复制操作更简单",
+      "searchText": "rcp rcp 使在两台linux主机之间的文件复制操作更简单"
+    },
+    {
+      "slug": "read",
+      "title": "read",
+      "description": "从键盘读取变量值",
+      "searchText": "read read 从键盘读取变量值"
+    },
+    {
+      "slug": "readelf",
+      "title": "readelf",
+      "description": "用于显示elf格式文件的信息",
+      "searchText": "readelf readelf 用于显示elf格式文件的信息"
+    },
+    {
+      "slug": "readonly",
+      "title": "readonly",
+      "description": "标记shell变量或函数为只读",
+      "searchText": "readonly readonly 标记shell变量或函数为只读"
+    },
+    {
+      "slug": "realpath",
+      "title": "realpath",
+      "description": "解析并规范化文件路径，返回绝对路径。",
+      "searchText": "realpath realpath 解析并规范化文件路径，返回绝对路径。"
+    },
+    {
+      "slug": "reboot",
+      "title": "reboot",
+      "description": "重新启动正在运行的Linux操作系统",
+      "searchText": "reboot reboot 重新启动正在运行的linux操作系统"
+    },
+    {
+      "slug": "reject",
+      "title": "reject",
+      "description": "指示打印系统拒绝发往指定目标打印机的打印任务",
+      "searchText": "reject reject 指示打印系统拒绝发往指定目标打印机的打印任务"
+    },
+    {
+      "slug": "rename",
+      "title": "rename",
+      "description": "用字符串替换的方式批量改变文件名",
+      "searchText": "rename rename 用字符串替换的方式批量改变文件名"
+    },
+    {
+      "slug": "renice",
+      "title": "renice",
+      "description": "修改正在运行的进程的调度优先级",
+      "searchText": "renice renice 修改正在运行的进程的调度优先级"
+    },
+    {
+      "slug": "reposync",
+      "title": "reposync",
+      "description": "同步yum存储库到本地目录",
+      "searchText": "reposync reposync 同步yum存储库到本地目录"
+    },
+    {
+      "slug": "repquota",
+      "title": "repquota",
+      "description": "报表的格式输出磁盘空间限制的状态",
+      "searchText": "repquota repquota 报表的格式输出磁盘空间限制的状态"
+    },
+    {
+      "slug": "resize",
+      "title": "resize",
+      "description": "命令设置终端机视窗的大小",
+      "searchText": "resize resize 命令设置终端机视窗的大小"
+    },
+    {
+      "slug": "restore",
+      "title": "restore",
+      "description": "所进行的操作和dump指令相反",
+      "searchText": "restore restore 所进行的操作和dump指令相反"
+    },
+    {
+      "slug": "restorecon",
+      "title": "restorecon",
+      "description": "恢复文件的安全上下文",
+      "searchText": "restorecon restorecon 恢复文件的安全上下文"
+    },
+    {
+      "slug": "return",
+      "title": "return",
+      "description": "从函数中退出并返回数值。",
+      "searchText": "return return 从函数中退出并返回数值。"
+    },
+    {
+      "slug": "rev",
+      "title": "rev",
+      "description": "将文件内容以字符为单位反序输出",
+      "searchText": "rev rev 将文件内容以字符为单位反序输出"
+    },
+    {
+      "slug": "rexec",
+      "title": "rexec",
+      "description": "远程执行Linux系统下命令",
+      "searchText": "rexec rexec 远程执行linux系统下命令"
+    },
+    {
+      "slug": "rlogin",
+      "title": "rlogin",
+      "description": "从当前终端登录到远程Linux主机",
+      "searchText": "rlogin rlogin 从当前终端登录到远程linux主机"
+    },
+    {
+      "slug": "rm",
+      "title": "rm",
+      "description": "用于删除给定的文件和目录",
+      "searchText": "rm rm 用于删除给定的文件和目录"
+    },
+    {
+      "slug": "rmdir",
+      "title": "rmdir",
+      "description": "用来删除空目录",
+      "searchText": "rmdir rmdir 用来删除空目录"
+    },
+    {
+      "slug": "rmmod",
+      "title": "rmmod",
+      "description": "从运行的内核中移除指定的内核模块",
+      "searchText": "rmmod rmmod 从运行的内核中移除指定的内核模块"
+    },
+    {
+      "slug": "route",
+      "title": "route",
+      "description": "显示并设置Linux中静态路由表",
+      "searchText": "route route 显示并设置linux中静态路由表"
+    },
+    {
+      "slug": "rpm",
+      "title": "rpm",
+      "description": "RPM软件包的管理工具",
+      "searchText": "rpm rpm rpm软件包的管理工具"
+    },
+    {
+      "slug": "rpm2cpio",
+      "title": "rpm2cpio",
+      "description": "将RPM软件包转换为cpio格式的文件",
+      "searchText": "rpm2cpio rpm2cpio 将rpm软件包转换为cpio格式的文件"
+    },
+    {
+      "slug": "rpmbuild",
+      "title": "rpmbuild",
+      "description": "创建RPM的二进制软件包和源码软件包",
+      "searchText": "rpmbuild rpmbuild 创建rpm的二进制软件包和源码软件包"
+    },
+    {
+      "slug": "rpmdb",
+      "title": "rpmdb",
+      "description": "初始化和重建RPM数据库",
+      "searchText": "rpmdb rpmdb 初始化和重建rpm数据库"
+    },
+    {
+      "slug": "rpmquery",
+      "title": "rpmquery",
+      "description": "从RPM数据库中查询软件包信息",
+      "searchText": "rpmquery rpmquery 从rpm数据库中查询软件包信息"
+    },
+    {
+      "slug": "rpmsign",
+      "title": "rpmsign",
+      "description": "使用RPM软件包的签名管理工具",
+      "searchText": "rpmsign rpmsign 使用rpm软件包的签名管理工具"
+    },
+    {
+      "slug": "rpmverify",
+      "title": "rpmverify",
+      "description": "验证已安装的RPM软件包的正确性",
+      "searchText": "rpmverify rpmverify 验证已安装的rpm软件包的正确性"
+    },
+    {
+      "slug": "rsh",
+      "title": "rsh",
+      "description": "连接远程主机并执行命令",
+      "searchText": "rsh rsh 连接远程主机并执行命令"
+    },
+    {
+      "slug": "rsync",
+      "title": "rsync",
+      "description": "远程数据同步工具",
+      "searchText": "rsync rsync 远程数据同步工具"
+    },
+    {
+      "slug": "runlevel",
+      "title": "runlevel",
+      "description": "打印当前Linux系统的运行等级",
+      "searchText": "runlevel runlevel 打印当前linux系统的运行等级"
+    },
+    {
+      "slug": "sar",
+      "title": "sar",
+      "description": "系统运行状态统计工具",
+      "searchText": "sar sar 系统运行状态统计工具"
+    },
+    {
+      "slug": "scp",
+      "title": "scp",
+      "description": "加密的方式在本地主机和远程主机之间复制文件",
+      "searchText": "scp scp 加密的方式在本地主机和远程主机之间复制文件"
+    },
+    {
+      "slug": "screen",
+      "title": "screen",
+      "description": "用于命令行终端切换",
+      "searchText": "screen screen 用于命令行终端切换"
+    },
+    {
+      "slug": "script",
+      "title": "script",
+      "description": "记录终端会话的所有操作",
+      "searchText": "script script 记录终端会话的所有操作"
+    },
+    {
+      "slug": "scriptreplay",
+      "title": "scriptreplay",
+      "description": "重新播放终端会话的所有操作",
+      "searchText": "scriptreplay scriptreplay 重新播放终端会话的所有操作"
+    },
+    {
+      "slug": "sed",
+      "title": "sed",
+      "description": "功能强大的流式文本编辑器",
+      "searchText": "sed sed 功能强大的流式文本编辑器"
+    },
+    {
+      "slug": "seinfo",
+      "title": "seinfo",
+      "description": "查询SELinux的策略提供多少相关规则",
+      "searchText": "seinfo seinfo 查询selinux的策略提供多少相关规则"
+    },
+    {
+      "slug": "semanage",
+      "title": "semanage",
+      "description": "默认目录的安全上下文查询与修改",
+      "searchText": "semanage semanage 默认目录的安全上下文查询与修改"
+    },
+    {
+      "slug": "sendmail",
+      "title": "sendmail",
+      "description": "著名电子邮件服务器",
+      "searchText": "sendmail sendmail 著名电子邮件服务器"
+    },
+    {
+      "slug": "seq",
+      "title": "seq",
+      "description": "以指定增量从首数开始打印数字到尾数",
+      "searchText": "seq seq 以指定增量从首数开始打印数字到尾数"
+    },
+    {
+      "slug": "service",
+      "title": "service",
+      "description": "控制系统服务的实用工具",
+      "searchText": "service service 控制系统服务的实用工具"
+    },
+    {
+      "slug": "sesearch",
+      "title": "sesearch",
+      "description": "查询SELinux策略的规则详情",
+      "searchText": "sesearch sesearch 查询selinux策略的规则详情"
+    },
+    {
+      "slug": "set",
+      "title": "set",
+      "description": "显示或设置shell特性及shell变量",
+      "searchText": "set set 显示或设置shell特性及shell变量"
+    },
+    {
+      "slug": "setfacl",
+      "title": "setfacl",
+      "description": "设置文件访问控制列表",
+      "searchText": "setfacl setfacl 设置文件访问控制列表"
+    },
+    {
+      "slug": "setpci",
+      "title": "setpci",
+      "description": "查询和配置PCI设备的使用工具",
+      "searchText": "setpci setpci 查询和配置pci设备的使用工具"
+    },
+    {
+      "slug": "setsebool",
+      "title": "setsebool",
+      "description": "修改SElinux策略内各项规则的布尔值",
+      "searchText": "setsebool setsebool 修改selinux策略内各项规则的布尔值"
+    },
+    {
+      "slug": "setsid",
+      "title": "setsid",
+      "description": "在新的会话中运行程序",
+      "searchText": "setsid setsid 在新的会话中运行程序"
+    },
+    {
+      "slug": "sftp",
+      "title": "sftp",
+      "description": "交互式的文件传输程序",
+      "searchText": "sftp sftp 交互式的文件传输程序"
+    },
+    {
+      "slug": "sftp-server",
+      "title": "sftp-server",
+      "description": "sftp协议的服务器端程序",
+      "searchText": "sftp-server sftp-server sftp协议的服务器端程序"
+    },
+    {
+      "slug": "sh",
+      "title": "sh",
+      "description": "shell命令解释器",
+      "searchText": "sh sh shell命令解释器"
+    },
+    {
+      "slug": "sha256sum",
+      "title": "sha256sum",
+      "description": "用于计算文件的 SHA-256 哈希值",
+      "searchText": "sha256sum sha256sum 用于计算文件的 sha-256 哈希值"
+    },
+    {
+      "slug": "shift",
+      "title": "shift",
+      "description": "移动位置参数。",
+      "searchText": "shift shift 移动位置参数。"
+    },
+    {
+      "slug": "shopt",
+      "title": "shopt",
+      "description": "显示和设置shell操作选项",
+      "searchText": "shopt shopt 显示和设置shell操作选项"
+    },
+    {
+      "slug": "showmount",
+      "title": "showmount",
+      "description": "显示NFS服务器加载的信息",
+      "searchText": "showmount showmount 显示nfs服务器加载的信息"
+    },
+    {
+      "slug": "shuf",
+      "title": "shuf",
+      "description": "产生随机的排列。",
+      "searchText": "shuf shuf 产生随机的排列。"
+    },
+    {
+      "slug": "shutdown",
+      "title": "shutdown",
+      "description": "用来执行系统关机的命令",
+      "searchText": "shutdown shutdown 用来执行系统关机的命令"
+    },
+    {
+      "slug": "skill",
+      "title": "skill",
+      "description": "向选定的进程发送信号冻结进程",
+      "searchText": "skill skill 向选定的进程发送信号冻结进程"
+    },
+    {
+      "slug": "slabtop",
+      "title": "slabtop",
+      "description": "实时显示内核slab内存缓存信息",
+      "searchText": "slabtop slabtop 实时显示内核slab内存缓存信息"
+    },
+    {
+      "slug": "sleep",
+      "title": "sleep",
+      "description": "将目前动作延迟一段时间",
+      "searchText": "sleep sleep 将目前动作延迟一段时间"
+    },
+    {
+      "slug": "slocate",
+      "title": "slocate",
+      "description": "命令查找文件或目录",
+      "searchText": "slocate slocate 命令查找文件或目录"
+    },
+    {
+      "slug": "smartmontools",
+      "title": "smartmontools",
+      "description": "Smartmontools 是一种硬盘检测工具，通过控制和管理硬盘的SMART（Self Monitoring Analysis and Reporting Technology，自动检测分析及报告技术）技术来实现的",
+      "searchText": "smartmontools smartmontools smartmontools 是一种硬盘检测工具，通过控制和管理硬盘的smart（self monitoring analysis and reporting technology，自动检测分析及报告技术）技术来实现的"
+    },
+    {
+      "slug": "smbclient",
+      "title": "smbclient",
+      "description": "交互方式访问samba服务器",
+      "searchText": "smbclient smbclient 交互方式访问samba服务器"
+    },
+    {
+      "slug": "smbpasswd",
+      "title": "smbpasswd",
+      "description": "samba用户和密码管理工具",
+      "searchText": "smbpasswd smbpasswd samba用户和密码管理工具"
+    },
+    {
+      "slug": "sort",
+      "title": "sort",
+      "description": "对文本文件中所有行进行排序。",
+      "searchText": "sort sort 对文本文件中所有行进行排序。"
+    },
+    {
+      "slug": "sosreport",
+      "title": "sosreport",
+      "description": "收集系统配置和诊断信息",
+      "searchText": "sosreport sosreport 收集系统配置和诊断信息"
+    },
+    {
+      "slug": "source",
+      "title": "source",
+      "description": "在当前Shell环境中从指定文件读取和执行命令。",
+      "searchText": "source source 在当前shell环境中从指定文件读取和执行命令。"
+    },
+    {
+      "slug": "speedtest-cli",
+      "title": "speedtest-cli",
+      "description": "命令行下测试服务器外网速度",
+      "searchText": "speedtest-cli speedtest-cli 命令行下测试服务器外网速度"
+    },
+    {
+      "slug": "spell",
+      "title": "spell",
+      "description": "对文件进行拼写检查",
+      "searchText": "spell spell 对文件进行拼写检查"
+    },
+    {
+      "slug": "split",
+      "title": "split",
+      "description": "分割任意大小的文件",
+      "searchText": "split split 分割任意大小的文件"
+    },
+    {
+      "slug": "squid",
+      "title": "squid",
+      "description": "squid服务器守护进程",
+      "searchText": "squid squid squid服务器守护进程"
+    },
+    {
+      "slug": "squidclient",
+      "title": "squidclient",
+      "description": "squid服务器的客户端管理工具",
+      "searchText": "squidclient squidclient squid服务器的客户端管理工具"
+    },
+    {
+      "slug": "ss",
+      "title": "ss",
+      "description": "比 netstat 好用的socket统计信息，iproute2 包附带的另一个工具，允许你查询 socket 的有关统计信息",
+      "searchText": "ss ss 比 netstat 好用的socket统计信息，iproute2 包附带的另一个工具，允许你查询 socket 的有关统计信息"
+    },
+    {
+      "slug": "ssh",
+      "title": "ssh",
+      "description": "openssh套件中的客户端连接工具",
+      "searchText": "ssh ssh openssh套件中的客户端连接工具"
+    },
+    {
+      "slug": "ssh-add",
+      "title": "ssh-add",
+      "description": "把专用密钥添加到ssh-agent的高速缓存中",
+      "searchText": "ssh-add ssh-add 把专用密钥添加到ssh-agent的高速缓存中"
+    },
+    {
+      "slug": "ssh-agent",
+      "title": "ssh-agent",
+      "description": "ssh密钥管理器",
+      "searchText": "ssh-agent ssh-agent ssh密钥管理器"
+    },
+    {
+      "slug": "ssh-copy-id",
+      "title": "ssh-copy-id",
+      "description": "把本地的ssh公钥文件安装到远程主机对应的账户下",
+      "searchText": "ssh-copy-id ssh-copy-id 把本地的ssh公钥文件安装到远程主机对应的账户下"
+    },
+    {
+      "slug": "ssh-keygen",
+      "title": "ssh-keygen",
+      "description": "为ssh生成、管理和转换认证密钥",
+      "searchText": "ssh-keygen ssh-keygen 为ssh生成、管理和转换认证密钥"
+    },
+    {
+      "slug": "ssh-keyscan",
+      "title": "ssh-keyscan",
+      "description": "收集主机公钥的使用工具",
+      "searchText": "ssh-keyscan ssh-keyscan 收集主机公钥的使用工具"
+    },
+    {
+      "slug": "sshd",
+      "title": "sshd",
+      "description": "openssh软件套件中的服务器守护进程",
+      "searchText": "sshd sshd openssh软件套件中的服务器守护进程"
+    },
+    {
+      "slug": "sshpass",
+      "title": "sshpass",
+      "description": "免交互 SSH 登录工具。",
+      "searchText": "sshpass sshpass 免交互 ssh 登录工具。"
+    },
+    {
+      "slug": "startx",
+      "title": "startx",
+      "description": "用来启动X Window",
+      "searchText": "startx startx 用来启动x window"
+    },
+    {
+      "slug": "stat",
+      "title": "stat",
+      "description": "用于显示文件的状态信息",
+      "searchText": "stat stat 用于显示文件的状态信息"
+    },
+    {
+      "slug": "strace",
+      "title": "strace",
+      "description": "跟踪系统调用和信号",
+      "searchText": "strace strace 跟踪系统调用和信号"
+    },
+    {
+      "slug": "strings",
+      "title": "strings",
+      "description": "在对象文件或二进制文件中查找可打印的字符串",
+      "searchText": "strings strings 在对象文件或二进制文件中查找可打印的字符串"
+    },
+    {
+      "slug": "stty",
+      "title": "stty",
+      "description": "修改终端命令行的相关设置",
+      "searchText": "stty stty 修改终端命令行的相关设置"
+    },
+    {
+      "slug": "su",
+      "title": "su",
+      "description": "用于切换当前用户身份到其他用户身份",
+      "searchText": "su su 用于切换当前用户身份到其他用户身份"
+    },
+    {
+      "slug": "sudo",
+      "title": "sudo",
+      "description": "以其他身份来执行命令",
+      "searchText": "sudo sudo 以其他身份来执行命令"
+    },
+    {
+      "slug": "sum",
+      "title": "sum",
+      "description": "计算文件的校验码和显示块数",
+      "searchText": "sum sum 计算文件的校验码和显示块数"
+    },
+    {
+      "slug": "supervisord",
+      "title": "supervisord",
+      "description": "配置后台服务/常驻进程的进程管家工具",
+      "searchText": "supervisord supervisord 配置后台服务/常驻进程的进程管家工具"
+    },
+    {
+      "slug": "suspend",
+      "title": "suspend",
+      "description": "挂起shell的执行。",
+      "searchText": "suspend suspend 挂起shell的执行。"
+    },
+    {
+      "slug": "swapoff",
+      "title": "swapoff",
+      "description": "关闭指定的交换空间",
+      "searchText": "swapoff swapoff 关闭指定的交换空间"
+    },
+    {
+      "slug": "swapon",
+      "title": "swapon",
+      "description": "激活Linux系统中交换空间",
+      "searchText": "swapon swapon 激活linux系统中交换空间"
+    },
+    {
+      "slug": "sync",
+      "title": "sync",
+      "description": "用于强制被改变的内容立刻写入磁盘",
+      "searchText": "sync sync 用于强制被改变的内容立刻写入磁盘"
+    },
+    {
+      "slug": "sysctl",
+      "title": "sysctl",
+      "description": "时动态地修改内核的运行参数",
+      "searchText": "sysctl sysctl 时动态地修改内核的运行参数"
+    },
+    {
+      "slug": "syslog",
+      "title": "syslog",
+      "description": "系统默认的日志守护进程",
+      "searchText": "syslog syslog 系统默认的日志守护进程"
+    },
+    {
+      "slug": "systemctl",
+      "title": "systemctl",
+      "description": "Systemd服务管理器",
+      "searchText": "systemctl systemctl systemd服务管理器"
+    },
+    {
+      "slug": "systool",
+      "title": "systool",
+      "description": "显示基于总线、类和拓扑显示系统中设备的信息",
+      "searchText": "systool systool 显示基于总线、类和拓扑显示系统中设备的信息"
+    },
+    {
+      "slug": "tac",
+      "title": "tac",
+      "description": "连接多个文件并以行为单位反向打印到标准输出。",
+      "searchText": "tac tac 连接多个文件并以行为单位反向打印到标准输出。"
+    },
+    {
+      "slug": "tail",
+      "title": "tail",
+      "description": "在屏幕上显示指定文件的末尾若干行",
+      "searchText": "tail tail 在屏幕上显示指定文件的末尾若干行"
+    },
+    {
+      "slug": "tailf",
+      "title": "tailf",
+      "description": "在屏幕上显示指定文件的末尾若干行内容，通常用于日志文件的跟踪输出",
+      "searchText": "tailf tailf 在屏幕上显示指定文件的末尾若干行内容，通常用于日志文件的跟踪输出"
+    },
+    {
+      "slug": "talk",
+      "title": "talk",
+      "description": "让用户和其他用户聊天",
+      "searchText": "talk talk 让用户和其他用户聊天"
+    },
+    {
+      "slug": "tar",
+      "title": "tar",
+      "description": "将许多文件一起保存至一个单独的磁带或磁盘归档，并能从归档中单独还原所需文件。",
+      "searchText": "tar tar 将许多文件一起保存至一个单独的磁带或磁盘归档，并能从归档中单独还原所需文件。"
+    },
+    {
+      "slug": "tcpdump",
+      "title": "tcpdump",
+      "description": "一款sniffer工具，是Linux上的抓包工具，嗅探器",
+      "searchText": "tcpdump tcpdump 一款sniffer工具，是linux上的抓包工具，嗅探器"
+    },
+    {
+      "slug": "tcpreplay",
+      "title": "tcpreplay",
+      "description": "将保存在 PCAP 文件包重新发送，用于性能或者功能测试",
+      "searchText": "tcpreplay tcpreplay 将保存在 pcap 文件包重新发送，用于性能或者功能测试"
+    },
+    {
+      "slug": "tee",
+      "title": "tee",
+      "description": "从标准输入读取数据并重定向到标准输出和文件。",
+      "searchText": "tee tee 从标准输入读取数据并重定向到标准输出和文件。"
+    },
+    {
+      "slug": "telinit",
+      "title": "telinit",
+      "description": "切换当前正在运行系统的运行等级",
+      "searchText": "telinit telinit 切换当前正在运行系统的运行等级"
+    },
+    {
+      "slug": "telnet",
+      "title": "telnet",
+      "description": "登录远程主机和管理(测试ip端口是否连通)",
+      "searchText": "telnet telnet 登录远程主机和管理(测试ip端口是否连通)"
+    },
+    {
+      "slug": "tempfile",
+      "title": "tempfile",
+      "description": "shell中给临时文件命名",
+      "searchText": "tempfile tempfile shell中给临时文件命名"
+    },
+    {
+      "slug": "test",
+      "title": "test",
+      "description": "执行条件表达式。",
+      "searchText": "test test 执行条件表达式。"
+    },
+    {
+      "slug": "tftp",
+      "title": "tftp",
+      "description": "在本机和tftp服务器之间使用TFTP协议传输文件",
+      "searchText": "tftp tftp 在本机和tftp服务器之间使用tftp协议传输文件"
+    },
+    {
+      "slug": "time",
+      "title": "time",
+      "description": "统计给定命令所花费的总时间",
+      "searchText": "time time 统计给定命令所花费的总时间"
+    },
+    {
+      "slug": "timedatectl",
+      "title": "timedatectl",
+      "description": "用于在 Linux 中设置或查询系统时间、日期和时区等配置。",
+      "searchText": "timedatectl timedatectl 用于在 linux 中设置或查询系统时间、日期和时区等配置。"
+    },
+    {
+      "slug": "times",
+      "title": "times",
+      "description": "显示进程累计时间。",
+      "searchText": "times times 显示进程累计时间。"
+    },
+    {
+      "slug": "tload",
+      "title": "tload",
+      "description": "显示系统负载状况",
+      "searchText": "tload tload 显示系统负载状况"
+    },
+    {
+      "slug": "tmux",
+      "title": "tmux",
+      "description": "Tmux是一个优秀的终端复用软件，类似GNU Screen，但来自于OpenBSD，采用BSD授权",
+      "searchText": "tmux tmux tmux是一个优秀的终端复用软件，类似gnu screen，但来自于openbsd，采用bsd授权"
+    },
+    {
+      "slug": "top",
+      "title": "top",
+      "description": "显示或管理执行中的程序",
+      "searchText": "top top 显示或管理执行中的程序"
+    },
+    {
+      "slug": "touch",
+      "title": "touch",
+      "description": "创建新的空文件",
+      "searchText": "touch touch 创建新的空文件"
+    },
+    {
+      "slug": "tput",
+      "title": "tput",
+      "description": "通过terminfo数据库对终端会话进行初始化和操作",
+      "searchText": "tput tput 通过terminfo数据库对终端会话进行初始化和操作"
+    },
+    {
+      "slug": "tr",
+      "title": "tr",
+      "description": "将字符进行替换压缩和删除",
+      "searchText": "tr tr 将字符进行替换压缩和删除"
+    },
+    {
+      "slug": "tracepath",
+      "title": "tracepath",
+      "description": "追踪目的主机经过的路由信息",
+      "searchText": "tracepath tracepath 追踪目的主机经过的路由信息"
+    },
+    {
+      "slug": "traceroute",
+      "title": "traceroute",
+      "description": "显示数据包到主机间的路径",
+      "searchText": "traceroute traceroute 显示数据包到主机间的路径"
+    },
+    {
+      "slug": "trap",
+      "title": "trap",
+      "description": "捕捉信号和其他事件并执行命令。",
+      "searchText": "trap trap 捕捉信号和其他事件并执行命令。"
+    },
+    {
+      "slug": "tree",
+      "title": "tree",
+      "description": "树状图列出目录的内容",
+      "searchText": "tree tree 树状图列出目录的内容"
+    },
+    {
+      "slug": "true",
+      "title": "true",
+      "description": "返回状态为成功。",
+      "searchText": "true true 返回状态为成功。"
+    },
+    {
+      "slug": "tty",
+      "title": "tty",
+      "description": "显示连接到当前标准输入的终端设备文件名",
+      "searchText": "tty tty 显示连接到当前标准输入的终端设备文件名"
+    },
+    {
+      "slug": "type",
+      "title": "type",
+      "description": "显示指定命令的类型。",
+      "searchText": "type type 显示指定命令的类型。"
+    },
+    {
+      "slug": "ufw",
+      "title": "ufw",
+      "description": "ubuntu防火墙管理工具",
+      "searchText": "ufw ufw ubuntu防火墙管理工具"
+    },
+    {
+      "slug": "ulimit",
+      "title": "ulimit",
+      "description": "控制shell程序的资源",
+      "searchText": "ulimit ulimit 控制shell程序的资源"
+    },
+    {
+      "slug": "umask",
+      "title": "umask",
+      "description": "显示或设置创建文件的权限掩码。",
+      "searchText": "umask umask 显示或设置创建文件的权限掩码。"
+    },
+    {
+      "slug": "umount",
+      "title": "umount",
+      "description": "用于卸载已经加载的文件系统",
+      "searchText": "umount umount 用于卸载已经加载的文件系统"
+    },
+    {
+      "slug": "unalias",
+      "title": "unalias",
+      "description": "删除由alias设置的别名",
+      "searchText": "unalias unalias 删除由alias设置的别名"
+    },
+    {
+      "slug": "uname",
+      "title": "uname",
+      "description": "打印系统信息。",
+      "searchText": "uname uname 打印系统信息。"
+    },
+    {
+      "slug": "unarj",
+      "title": "unarj",
+      "description": "解压缩由arj命令创建的压缩包",
+      "searchText": "unarj unarj 解压缩由arj命令创建的压缩包"
+    },
+    {
+      "slug": "uncompress",
+      "title": "uncompress",
+      "description": "用来解压.Z文件",
+      "searchText": "uncompress uncompress 用来解压.z文件"
+    },
+    {
+      "slug": "unexpand",
+      "title": "unexpand",
+      "description": "将文件的空白字符转换为制表符",
+      "searchText": "unexpand unexpand 将文件的空白字符转换为制表符"
+    },
+    {
+      "slug": "uniq",
+      "title": "uniq",
+      "description": "显示或忽略重复的行。",
+      "searchText": "uniq uniq 显示或忽略重复的行。"
+    },
+    {
+      "slug": "unlink",
+      "title": "unlink",
+      "description": "系统调用函数unlink去删除指定的文件",
+      "searchText": "unlink unlink 系统调用函数unlink去删除指定的文件"
+    },
+    {
+      "slug": "unprotoize",
+      "title": "unprotoize",
+      "description": "删除C语言源代码文件中的函数原型",
+      "searchText": "unprotoize unprotoize 删除c语言源代码文件中的函数原型"
+    },
+    {
+      "slug": "unrar",
+      "title": "unrar",
+      "description": "解压rar文件命令，从 rar 压缩包中提取文件",
+      "searchText": "unrar unrar 解压rar文件命令，从 rar 压缩包中提取文件"
+    },
+    {
+      "slug": "unset",
+      "title": "unset",
+      "description": "删除指定的shell变量或函数。",
+      "searchText": "unset unset 删除指定的shell变量或函数。"
+    },
+    {
+      "slug": "unzip",
+      "title": "unzip",
+      "description": "用于解压缩由zip命令压缩的压缩包",
+      "searchText": "unzip unzip 用于解压缩由zip命令压缩的压缩包"
+    },
+    {
+      "slug": "updatedb",
+      "title": "updatedb",
+      "description": "创建或更新slocate命令所必需的数据库文件",
+      "searchText": "updatedb updatedb 创建或更新slocate命令所必需的数据库文件"
+    },
+    {
+      "slug": "uptime",
+      "title": "uptime",
+      "description": "查看Linux系统负载信息",
+      "searchText": "uptime uptime 查看linux系统负载信息"
+    },
+    {
+      "slug": "useradd",
+      "title": "useradd",
+      "description": "创建的新的系统用户",
+      "searchText": "useradd useradd 创建的新的系统用户"
+    },
+    {
+      "slug": "userdel",
+      "title": "userdel",
+      "description": "用于删除给定的用户以及与用户相关的文件",
+      "searchText": "userdel userdel 用于删除给定的用户以及与用户相关的文件"
+    },
+    {
+      "slug": "usermod",
+      "title": "usermod",
+      "description": "用于修改用户的基本信息",
+      "searchText": "usermod usermod 用于修改用户的基本信息"
+    },
+    {
+      "slug": "usernetctl",
+      "title": "usernetctl",
+      "description": "被允许时操作指定的网络接口",
+      "searchText": "usernetctl usernetctl 被允许时操作指定的网络接口"
+    },
+    {
+      "slug": "users",
+      "title": "users",
+      "description": "打印当前主机所有登陆用户的名称。",
+      "searchText": "users users 打印当前主机所有登陆用户的名称。"
+    },
+    {
+      "slug": "uucico",
+      "title": "uucico",
+      "description": "UUCP文件传输服务程序",
+      "searchText": "uucico uucico uucp文件传输服务程序"
+    },
+    {
+      "slug": "uupick",
+      "title": "uupick",
+      "description": "命令处理传送进来的文件",
+      "searchText": "uupick uupick 命令处理传送进来的文件"
+    },
+    {
+      "slug": "uuto",
+      "title": "uuto",
+      "description": "将文件传送到远端的UUCP主机",
+      "searchText": "uuto uuto 将文件传送到远端的uucp主机"
+    },
+    {
+      "slug": "vdfuse",
+      "title": "vdfuse",
+      "description": "VirtualBox软件挂载VDI分区文件工具",
+      "searchText": "vdfuse vdfuse virtualbox软件挂载vdi分区文件工具"
+    },
+    {
+      "slug": "vgchange",
+      "title": "vgchange",
+      "description": "修改卷组属性",
+      "searchText": "vgchange vgchange 修改卷组属性"
+    },
+    {
+      "slug": "vgconvert",
+      "title": "vgconvert",
+      "description": "转换卷组元数据格式",
+      "searchText": "vgconvert vgconvert 转换卷组元数据格式"
+    },
+    {
+      "slug": "vgcreate",
+      "title": "vgcreate",
+      "description": "用于创建LVM卷组",
+      "searchText": "vgcreate vgcreate 用于创建lvm卷组"
+    },
+    {
+      "slug": "vgdisplay",
+      "title": "vgdisplay",
+      "description": "显示LVM卷组的信息",
+      "searchText": "vgdisplay vgdisplay 显示lvm卷组的信息"
+    },
+    {
+      "slug": "vgextend",
+      "title": "vgextend",
+      "description": "向卷组中添加物理卷",
+      "searchText": "vgextend vgextend 向卷组中添加物理卷"
+    },
+    {
+      "slug": "vgreduce",
+      "title": "vgreduce",
+      "description": "从卷组中删除物理卷",
+      "searchText": "vgreduce vgreduce 从卷组中删除物理卷"
+    },
+    {
+      "slug": "vgremove",
+      "title": "vgremove",
+      "description": "用于用户删除LVM卷组",
+      "searchText": "vgremove vgremove 用于用户删除lvm卷组"
+    },
+    {
+      "slug": "vgrename",
+      "title": "vgrename",
+      "description": "使用vgrename命令可以重命名卷组的名称",
+      "searchText": "vgrename vgrename 使用vgrename命令可以重命名卷组的名称"
+    },
+    {
+      "slug": "vgscan",
+      "title": "vgscan",
+      "description": "扫描并显示系统中的卷组",
+      "searchText": "vgscan vgscan 扫描并显示系统中的卷组"
+    },
+    {
+      "slug": "vi",
+      "title": "vi",
+      "description": "功能强大的纯文本编辑器",
+      "searchText": "vi vi 功能强大的纯文本编辑器"
+    },
+    {
+      "slug": "vmstat",
+      "title": "vmstat",
+      "description": "显示虚拟内存状态",
+      "searchText": "vmstat vmstat 显示虚拟内存状态"
+    },
+    {
+      "slug": "volname",
+      "title": "volname",
+      "description": "显示指定的ISO-9660格式的设备的卷名称",
+      "searchText": "volname volname 显示指定的iso-9660格式的设备的卷名称"
+    },
+    {
+      "slug": "w",
+      "title": "w",
+      "description": "显示目前登入系统的用户信息",
+      "searchText": "w w 显示目前登入系统的用户信息"
+    },
+    {
+      "slug": "wait",
+      "title": "wait",
+      "description": "等待进程执行完后返回",
+      "searchText": "wait wait 等待进程执行完后返回"
+    },
+    {
+      "slug": "wall",
+      "title": "wall",
+      "description": "向系统当前所有打开的终端上输出信息",
+      "searchText": "wall wall 向系统当前所有打开的终端上输出信息"
+    },
+    {
+      "slug": "watch",
+      "title": "watch",
+      "description": "可以将命令的输出结果输出到标准输出设备，多用于周期性执行命令/定时执行命令",
+      "searchText": "watch watch 可以将命令的输出结果输出到标准输出设备，多用于周期性执行命令/定时执行命令"
+    },
+    {
+      "slug": "wc",
+      "title": "wc",
+      "description": "统计文件的字节数、字数、行数",
+      "searchText": "wc wc 统计文件的字节数、字数、行数"
+    },
+    {
+      "slug": "wget",
+      "title": "wget",
+      "description": "Linux系统下载文件工具",
+      "searchText": "wget wget linux系统下载文件工具"
+    },
+    {
+      "slug": "whatis",
+      "title": "whatis",
+      "description": "查询一个命令执行什么功能",
+      "searchText": "whatis whatis 查询一个命令执行什么功能"
+    },
+    {
+      "slug": "whereis",
+      "title": "whereis",
+      "description": "查找二进制程序、代码等相关文件路径",
+      "searchText": "whereis whereis 查找二进制程序、代码等相关文件路径"
+    },
+    {
+      "slug": "which",
+      "title": "which",
+      "description": "查找并显示给定命令的绝对路径",
+      "searchText": "which which 查找并显示给定命令的绝对路径"
+    },
+    {
+      "slug": "who",
+      "title": "who",
+      "description": "显示当前所有登陆用户的信息。",
+      "searchText": "who who 显示当前所有登陆用户的信息。"
+    },
+    {
+      "slug": "whoami",
+      "title": "whoami",
+      "description": "打印当前有效的用户ID对应的名称",
+      "searchText": "whoami whoami 打印当前有效的用户id对应的名称"
+    },
+    {
+      "slug": "write",
+      "title": "write",
+      "description": "向指定登录用户终端上发送信息",
+      "searchText": "write write 向指定登录用户终端上发送信息"
+    },
+    {
+      "slug": "xargs",
+      "title": "xargs",
+      "description": "给其他命令传递参数的一个过滤器",
+      "searchText": "xargs xargs 给其他命令传递参数的一个过滤器"
+    },
+    {
+      "slug": "xauth",
+      "title": "xauth",
+      "description": "显示和编辑被用于连接X服务器的认证信息",
+      "searchText": "xauth xauth 显示和编辑被用于连接x服务器的认证信息"
+    },
+    {
+      "slug": "xclip",
+      "title": "xclip",
+      "description": "管理 X 粘贴板",
+      "searchText": "xclip xclip 管理 x 粘贴板"
+    },
+    {
+      "slug": "xhost",
+      "title": "xhost",
+      "description": "制哪些X客户端能够在X服务器上显示",
+      "searchText": "xhost xhost 制哪些x客户端能够在x服务器上显示"
+    },
+    {
+      "slug": "xinit",
+      "title": "xinit",
+      "description": "是Linux下X-Window系统的初始化程序",
+      "searchText": "xinit xinit 是linux下x-window系统的初始化程序"
+    },
+    {
+      "slug": "xlsatoms",
+      "title": "xlsatoms",
+      "description": "列出X服务器内部所有定义的原子成分",
+      "searchText": "xlsatoms xlsatoms 列出x服务器内部所有定义的原子成分"
+    },
+    {
+      "slug": "xlsclients",
+      "title": "xlsclients",
+      "description": "列出显示器中的客户端应用程序",
+      "searchText": "xlsclients xlsclients 列出显示器中的客户端应用程序"
+    },
+    {
+      "slug": "xlsfonts",
+      "title": "xlsfonts",
+      "description": "列出X Server使用的字体",
+      "searchText": "xlsfonts xlsfonts 列出x server使用的字体"
+    },
+    {
+      "slug": "xrandr",
+      "title": "xrandr",
+      "description": "X 窗口系统配置管理工具",
+      "searchText": "xrandr xrandr x 窗口系统配置管理工具"
+    },
+    {
+      "slug": "xset",
+      "title": "xset",
+      "description": "设置X-Window系统中的用户爱好的实用工具",
+      "searchText": "xset xset 设置x-window系统中的用户爱好的实用工具"
+    },
+    {
+      "slug": "xz",
+      "title": "xz",
+      "description": "POSIX 平台开发具有高压缩率的工具",
+      "searchText": "xz xz posix 平台开发具有高压缩率的工具"
+    },
+    {
+      "slug": "yes",
+      "title": "yes",
+      "description": "重复打印指定字符串",
+      "searchText": "yes yes 重复打印指定字符串"
+    },
+    {
+      "slug": "ypdomainname",
+      "title": "ypdomainname",
+      "description": "显示主机的NIS的域名",
+      "searchText": "ypdomainname ypdomainname 显示主机的nis的域名"
+    },
+    {
+      "slug": "yum",
+      "title": "yum",
+      "description": "基于RPM的软件包管理器",
+      "searchText": "yum yum 基于rpm的软件包管理器"
+    },
+    {
+      "slug": "zcat",
+      "title": "zcat",
+      "description": "显示压缩包中文件的内容",
+      "searchText": "zcat zcat 显示压缩包中文件的内容"
+    },
+    {
+      "slug": "zfore",
+      "title": "zfore",
+      "description": "强制为gzip格式的压缩文件添加.gz后缀",
+      "searchText": "zfore zfore 强制为gzip格式的压缩文件添加.gz后缀"
+    },
+    {
+      "slug": "zip",
+      "title": "zip",
+      "description": "可以用来解压缩文件",
+      "searchText": "zip zip 可以用来解压缩文件"
+    },
+    {
+      "slug": "zipinfo",
+      "title": "zipinfo",
+      "description": "用来列出压缩文件信息",
+      "searchText": "zipinfo zipinfo 用来列出压缩文件信息"
+    },
+    {
+      "slug": "zipsplit",
+      "title": "zipsplit",
+      "description": "将较大的zip压缩包分割成各个较小的压缩包",
+      "searchText": "zipsplit zipsplit 将较大的zip压缩包分割成各个较小的压缩包"
+    },
+    {
+      "slug": "znew",
+      "title": "znew",
+      "description": "将.Z压缩包重新转化为gzip命令压缩的.gz压缩包",
+      "searchText": "znew znew 将.z压缩包重新转化为gzip命令压缩的.gz压缩包"
+    }
+  ]
+}

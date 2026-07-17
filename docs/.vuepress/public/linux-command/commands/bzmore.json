@@ -1,0 +1,1 @@
+{"slug":"bzmore","title":"bzmore","description":"查看bzip2压缩过的文本文件的内容","sourcePath":"data/linux-command/command/bzmore.md","markdown":"bzmore\r\n===\r\n\r\n查看bzip2压缩过的文本文件的内容\r\n\r\n## 补充说明\r\n\r\n**bzmore命令** 用于查看bzip2压缩过的文本文件的内容，当下一屏显示不下时可以实现分屏显示。\r\n\r\n###  语法\r\n\r\n```shell\r\nbzmore(参数)\r\n```\r\n\r\n###  参数\r\n\r\n文件：指定要分屏显示的.bz2压缩包。\r\n\r\n\r\n"}

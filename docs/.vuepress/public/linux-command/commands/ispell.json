@@ -1,0 +1,1 @@
+{"slug":"ispell","title":"ispell","description":"检查文件中出现的拼写错误","sourcePath":"data/linux-command/command/ispell.md","markdown":"ispell\r\n===\r\n\r\n检查文件中出现的拼写错误\r\n\r\n## 补充说明\r\n\r\n**ispell命令** 用于检查文件中出现的拼写错误。\r\n\r\n###  语法\r\n\r\n```shell\r\nispell(参数)\r\n```\r\n\r\n###  参数\r\n\r\n文件：指定要进行拼写检查的文件。\r\n\r\n\r\n"}

@@ -1,0 +1,1 @@
+{"slug":"false","title":"false","description":"返回状态为失败。","sourcePath":"data/linux-command/command/false.md","markdown":"false\r\n===\r\n\r\n返回状态为失败。\r\n\r\n## 概要\r\n\r\n```shell\r\nfalse\r\n```\r\n\r\n## 主要用途\r\n\r\n- 用于和其他命令进行逻辑运算。\r\n\r\n## 返回值\r\n\r\n返回状态总是失败；返回值为1。\r\n\r\n\r\n### 注意\r\n\r\n1. 该命令是bash内建命令，相关的帮助信息请查看`help`命令。\r\n\r\n\r\n\r\n"}

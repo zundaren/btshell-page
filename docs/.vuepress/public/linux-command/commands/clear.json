@@ -1,0 +1,1 @@
+{"slug":"clear","title":"clear","description":"清除当前屏幕终端上的任何信息","sourcePath":"data/linux-command/command/clear.md","markdown":"clear\r\n===\r\n\r\n清除当前屏幕终端上的任何信息\r\n\r\n## 补充说明\r\n\r\n**clear命令** 用于清除当前屏幕终端上的任何信息。\r\n\r\n###  语法\r\n\r\n```shell\r\nclear\r\n```\r\n\r\n###  实例\r\n\r\n直接输入clear命令当前终端上的任何信息就可被清除。\r\n\r\n\r\n"}

@@ -1,0 +1,1 @@
+{"slug":"dris","title":"dris","description":"显示和清空目录堆栈中的内容","sourcePath":"data/linux-command/command/dris.md","markdown":"dris\r\n===\r\n\r\n显示和清空目录堆栈中的内容\r\n\r\n## 补充说明\r\n\r\n**dris命令** 用于显示和清空目录堆栈中的内容。\r\n\r\n###  语法\r\n\r\n```shell\r\ndris(选项)\r\n```\r\n\r\n###  选项\r\n\r\n```shell\r\n+n：显示从左边算起第n笔的目录；\r\n-n：显示从右边算起第n笔的目录；\r\n-l：显示目录完整的记录。\r\n```\r\n\r\n\r\n"}

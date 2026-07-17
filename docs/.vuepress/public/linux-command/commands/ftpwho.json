@@ -1,0 +1,1 @@
+{"slug":"ftpwho","title":"ftpwho","description":"显示当前每个ftp会话信息","sourcePath":"data/linux-command/command/ftpwho.md","markdown":"ftpwho\r\n===\r\n\r\n显示当前每个ftp会话信息\r\n\r\n## 补充说明\r\n\r\n**ftpwho命令** ftp服务器套件proftpd的工作指令，用于显示当前每个ftp会话信息。\r\n\r\n###  语法\r\n\r\n```shell\r\nftpwho(选项)\r\n```\r\n\r\n###  选项\r\n\r\n```shell\r\n-h：显示帮助信息；\r\n-v：详细模式，输出更多信息。\r\n```\r\n\r\n\r\n"}

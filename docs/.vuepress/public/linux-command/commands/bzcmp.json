@@ -1,0 +1,1 @@
+{"slug":"bzcmp","title":"bzcmp","description":"比较两个压缩包中的文件","sourcePath":"data/linux-command/command/bzcmp.md","markdown":"bzcmp\r\n===\r\n\r\n比较两个压缩包中的文件\r\n\r\n## 补充说明\r\n\r\n**bzcmp命令** 主要功能是在不真正解压缩.bz2压缩包的情况下，比较两个压缩包中的文件，省去了解压缩后在调用cmp命令的过程。\r\n\r\n###  语法\r\n\r\n```shell\r\nbzcmp(参数)\r\n```\r\n\r\n###  参数\r\n\r\n* 文件1：指定要比较的第一个.bz2压缩包；\r\n* 文件2：指定要比较的第二个.bz2压缩包。\r\n\r\n\r\n"}

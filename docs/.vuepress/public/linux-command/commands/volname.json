@@ -1,0 +1,1 @@
+{"slug":"volname","title":"volname","description":"显示指定的ISO-9660格式的设备的卷名称","sourcePath":"data/linux-command/command/volname.md","markdown":"volname\r\n===\r\n\r\n显示指定的ISO-9660格式的设备的卷名称\r\n\r\n## 补充说明\r\n\r\n**volname命令** 用于显示指定的“ISO-9660”格式的设备的卷名称，通常这种格式的设备为光驱。\r\n\r\n###  语法\r\n\r\n```shell\r\nvolname(参数)\r\n```\r\n\r\n###  参数\r\n\r\n设备文件名：指定要显示卷名称的设备。\r\n\r\n\r\n"}

@@ -1,0 +1,1 @@
+{"slug":"bzgrep","title":"bzgrep","description":"使用正则表达式搜索.bz2压缩包中文件","sourcePath":"data/linux-command/command/bzgrep.md","markdown":"bzgrep\r\n===\r\n\r\n使用正则表达式搜索.bz2压缩包中文件\r\n\r\n## 补充说明\r\n\r\n**bzgrep命令** 使用正则表达式搜索“.bz2”压缩包中文件，将匹配的行显示到标注输出。\r\n\r\n###  语法\r\n\r\n```shell\r\nbzgrep(参数)\r\n```\r\n\r\n###  参数\r\n\r\n*   搜索模式：指定要搜索的模式；\r\n*   .bz2文件：指定要搜索的.bz2压缩包。\r\n\r\n\r\n"}

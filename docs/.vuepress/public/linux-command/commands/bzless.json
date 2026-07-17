@@ -1,0 +1,1 @@
+{"slug":"bzless","title":"bzless","description":"增强.bz2压缩包查看器","sourcePath":"data/linux-command/command/bzless.md","markdown":"bzless\r\n===\r\n\r\n增强.bz2压缩包查看器\r\n\r\n## 补充说明\r\n\r\n**bzless命令** 是增强“.bz2”压缩包查看器，bzless比bzmore命令功能更加强大。\r\n\r\n###  语法\r\n\r\n```shell\r\nbzless(参数)\r\n```\r\n\r\n###  参数\r\n\r\n文件：指定要分屏显示的.bz2压缩包。\r\n\r\n\r\n"}
