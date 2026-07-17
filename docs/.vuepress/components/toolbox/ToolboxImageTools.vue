@@ -45,6 +45,16 @@
       </label>
     </div>
 
+    <div
+      ref="editorPasteZone"
+      class="image-paste-zone"
+      tabindex="0"
+      @click="focusPasteZone('editor')"
+      @paste.prevent="handlePasteImage('editor', $event)"
+    >
+      点击这里后按 Ctrl+V 粘贴图片到“图片处理”
+    </div>
+
     <div class="image-file-tip">
       {{ imageFileName || '未选择图片。支持 png、jpg、jpeg、webp、bmp。' }}
     </div>
@@ -219,8 +229,162 @@
     </div>
 
     <div class="tool-card__footer">
-      <span>{{ imageMessage }}</span>
+      <span class="tool-message" :class="{ 'is-error': isErrorMessage(imageMessage) }">{{ imageMessage }}</span>
       <button type="button" class="ghost" :disabled="!resultImageDataUrl" @click="downloadResultImage">下载结果</button>
+    </div>
+
+    <div class="tool-divider"></div>
+
+    <div class="tool-subsection">
+      <div class="tool-subsection__header">
+        <h3 class="tool-subsection__title">图片切割 9 宫格</h3>
+        <div class="tool-card__actions">
+          <button type="button" @click="generateSplitNineGrid">生成切图</button>
+          <button
+            type="button"
+            class="ghost"
+            :disabled="!splitTiles.length || splitZipGenerating"
+            @click="downloadSplitZip"
+          >
+            {{ splitZipGenerating ? '打包中...' : '打包下载' }}
+          </button>
+          <button type="button" class="ghost" @click="resetSplitCropPosition">重置位置</button>
+          <button type="button" class="ghost" @click="clearSplitTool">清空切图</button>
+        </div>
+      </div>
+
+      <div class="image-split-toolbar">
+        <label class="image-toolbar__field">
+          <span>上传图片</span>
+          <input
+            ref="splitFileInput"
+            class="tool-input tool-input--file"
+            type="file"
+            accept="image/png,image/jpeg,image/jpg,image/webp,image/bmp"
+            @change="handleSplitImageFileChange"
+          >
+        </label>
+        <label class="image-toolbar__field">
+          <span>输出格式</span>
+          <select v-model="splitOutputFormat">
+            <option value="keep">保持原格式</option>
+            <option value="jpeg">JPEG</option>
+            <option value="png">PNG</option>
+            <option value="webp">WEBP</option>
+          </select>
+        </label>
+        <label class="image-toolbar__field">
+          <span>压缩质量（%）</span>
+          <input
+            v-model.number="splitQualityPercent"
+            class="tool-input"
+            type="number"
+            min="1"
+            max="100"
+          >
+        </label>
+        <label class="image-toolbar__field">
+          <span>九宫格边长</span>
+          <input
+            v-model.number="splitCanvasSize"
+            class="tool-input"
+            type="number"
+            min="180"
+            max="6000"
+          >
+        </label>
+        <label class="image-toolbar__field">
+          <span>九宫格间隙</span>
+          <input
+            v-model.number="splitGap"
+            class="tool-input"
+            type="number"
+            min="0"
+            max="200"
+          >
+        </label>
+      </div>
+
+      <div
+        ref="splitPasteZone"
+        class="image-paste-zone"
+        tabindex="0"
+        @click="focusPasteZone('split')"
+        @paste.prevent="handlePasteImage('split', $event)"
+      >
+        点击这里后按 Ctrl+V 粘贴图片到“9 宫格切图”
+      </div>
+
+      <div class="image-file-tip">
+        {{ splitFileName || splitSourceTip }}
+      </div>
+
+      <div class="image-preview-grid">
+        <div class="image-preview-card">
+          <div class="image-preview-card__title">裁切预览</div>
+          <div class="image-preview image-preview--stitch" :class="{ empty: !splitSourceDataUrl }">
+            <div v-if="splitSourceDataUrl" class="image-split-preview">
+              <div
+                class="image-split-preview__stage"
+                :style="splitPreviewStageStyle"
+                @mousedown="beginSplitDrag"
+              >
+                <img
+                  :src="splitSourceDataUrl"
+                  alt="九宫格裁切预览"
+                  :style="splitPreviewImageStyle"
+                  draggable="false"
+                >
+                <div class="image-split-preview__grid" aria-hidden="true"></div>
+              </div>
+            </div>
+            <span v-else>先上传图片，再拖动调整裁切区域</span>
+          </div>
+          <div class="image-meta">
+            <div class="image-meta__item">
+              <span>裁切区域</span>
+              <strong>{{ splitCanvasSummary }}</strong>
+            </div>
+            <div class="image-meta__item">
+              <span>当前位置</span>
+              <strong>{{ splitOffsetText }}</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-preview-card">
+          <div class="image-preview-card__title">切图结果</div>
+          <div class="image-split-grid" :class="{ empty: !splitTiles.length }">
+            <template v-if="splitTiles.length">
+              <div
+                v-for="tile in splitTiles"
+                :key="tile.index"
+                class="image-split-tile"
+              >
+                <img
+                  :src="tile.dataUrl"
+                  :alt="`九宫格切图 ${tile.index + 1}`"
+                >
+              </div>
+            </template>
+            <span v-else>生成后会显示 9 张切图</span>
+          </div>
+          <div class="image-meta">
+            <div class="image-meta__item">
+              <span>单张尺寸</span>
+              <strong>{{ splitTileSummary }}</strong>
+            </div>
+            <div class="image-meta__item">
+              <span>数量</span>
+              <strong>{{ splitTiles.length ? `${splitTiles.length} 张` : '未生成' }}</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tool-card__footer">
+        <span class="tool-message" :class="{ 'is-error': isErrorMessage(splitMessage) }">{{ splitMessage }}</span>
+      </div>
     </div>
 
     <div class="tool-divider"></div>
@@ -273,6 +437,16 @@
             max="100"
           >
         </label>
+      </div>
+
+      <div
+        ref="stitchPasteZone"
+        class="image-paste-zone"
+        tabindex="0"
+        @click="focusPasteZone('stitch')"
+        @paste.prevent="handlePasteImage('stitch', $event)"
+      >
+        点击这里后按 Ctrl+V 追加图片到“图片拼接”
       </div>
 
       <div class="image-file-tip">
@@ -362,7 +536,7 @@
               在下方拼接预览中按住单张图片拖动，可微调上下左右位置。
             </div>
             <div class="image-stitch-tip">
-              长图模式会按顺序纵向拼接；9 宫格模式最多使用前 9 张，空位会保留。
+              长图模式会按顺序拼接；9 宫格模式最多使用前 9 张，空位会保留。
             </div>
             <div class="image-stitch-tip">
               当前输出：{{ stitchCompositionSummary }}
@@ -444,7 +618,7 @@
       </div>
 
       <div class="tool-card__footer">
-        <span>{{ stitchMessage }}</span>
+        <span class="tool-message" :class="{ 'is-error': isErrorMessage(stitchMessage) }">{{ stitchMessage }}</span>
         <button type="button" class="ghost" :disabled="!stitchResultDataUrl" @click="downloadStitchImage">下载拼接图</button>
       </div>
     </div>
@@ -472,6 +646,7 @@
 </template>
 
 <script>
+
 function readFileAsDataUrl(file) {
   return new Promise((resolve, reject) => {
     const reader = new FileReader();
@@ -593,6 +768,106 @@ function getImageExtension(mimeType) {
   return 'png';
 }
 
+let jsZipConstructorPromise = null;
+
+function ensureGlobalObject() {
+  const runtimeGlobal = typeof globalThis !== 'undefined'
+    ? globalThis
+    : typeof window !== 'undefined'
+      ? window
+      : null;
+
+  if (runtimeGlobal && typeof runtimeGlobal.global === 'undefined') {
+    runtimeGlobal.global = runtimeGlobal;
+  }
+}
+
+function resolveJSZipConstructor(module) {
+  const queue = [module];
+  const visited = [];
+
+  while (queue.length) {
+    const current = queue.shift();
+    if (!current || visited.indexOf(current) !== -1) {
+      continue;
+    }
+
+    visited.push(current);
+
+    if (typeof current === 'function') {
+      return current;
+    }
+
+    if (typeof current === 'object') {
+      queue.push(current.default);
+      queue.push(current['module.exports']);
+      queue.push(current.JSZip);
+    }
+  }
+
+  throw new Error('JSZip 加载失败。');
+}
+
+async function getJSZipConstructor() {
+  if (!jsZipConstructorPromise) {
+    ensureGlobalObject();
+    jsZipConstructorPromise = import('jszip/dist/jszip.min.js')
+      .then((module) => resolveJSZipConstructor(module))
+      .catch((error) => {
+        jsZipConstructorPromise = null;
+        throw error;
+      });
+  }
+
+  return jsZipConstructorPromise;
+}
+
+function createNamedImageFile(file, baseName, index = 0) {
+  if (file && file.name) {
+    return file;
+  }
+
+  const mimeType = (file && file.type) || 'image/png';
+  const extension = getImageExtension(mimeType);
+  const timestamp = Date.now();
+
+  if (typeof File === 'function') {
+    return new File([file], `${baseName}-${timestamp}-${index + 1}.${extension}`, { type: mimeType });
+  }
+
+  file.name = `${baseName}-${timestamp}-${index + 1}.${extension}`;
+  return file;
+}
+
+function extractImageFilesFromClipboard(event, baseName) {
+  const clipboardData = event && event.clipboardData ? event.clipboardData : null;
+  if (!clipboardData) {
+    return [];
+  }
+
+  const imageFiles = [];
+  const items = clipboardData.items ? Array.from(clipboardData.items) : [];
+  items.forEach((item, index) => {
+    if (!item || item.kind !== 'file' || !item.type || item.type.indexOf('image/') !== 0) {
+      return;
+    }
+
+    const file = item.getAsFile ? item.getAsFile() : null;
+    if (file) {
+      imageFiles.push(createNamedImageFile(file, baseName, index));
+    }
+  });
+
+  if (imageFiles.length) {
+    return imageFiles;
+  }
+
+  const files = clipboardData.files ? Array.from(clipboardData.files) : [];
+  return files
+    .filter((file) => file && file.type && file.type.indexOf('image/') === 0)
+    .map((file, index) => createNamedImageFile(file, baseName, index));
+}
+
 function stripFileExtension(fileName) {
   return fileName.replace(/\.[^.]+$/, '') || 'image';
 }
@@ -706,6 +981,28 @@ export default {
       editorPreviewWidth: 0,
       editorPreviewHeight: 0,
       imageMessage: '支持压缩质量、居中裁剪和文字叠加，处理在浏览器本地完成。',
+      splitFile: null,
+      splitFileName: '',
+      splitSourceMimeType: '',
+      splitSourceDataUrl: '',
+      splitSourceImageElement: null,
+      splitSourceWidth: 0,
+      splitSourceHeight: 0,
+      splitSourceFileSize: 0,
+      splitOutputFormat: 'keep',
+      splitQualityPercent: 92,
+      splitCanvasSize: 1080,
+      splitGap: 0,
+      splitOffsetX: 0,
+      splitOffsetY: 0,
+      splitCompositeDataUrl: '',
+      splitCompositeBlob: null,
+      splitCompositeMimeType: '',
+      splitTiles: [],
+      splitMessage: '支持将当前图片裁切成 9 宫格，可拖拽调整裁切位置。',
+      splitZipGenerating: false,
+      splitDragging: false,
+      splitDragState: null,
       stitchItems: [],
       stitchMode: 'long',
       stitchOutputFormat: 'keep',
@@ -774,6 +1071,68 @@ export default {
         left: `${(this.overlayX / this.editorPreviewWidth) * 100}%`,
         top: `${(this.overlayY / this.editorPreviewHeight) * 100}%`,
       };
+    },
+    splitSourceTip() {
+      if (!this.splitSourceImageElement) {
+        return '九宫格切图使用这里单独上传的图片，不会和上方图片处理混在一起。';
+      }
+
+      return `当前使用 ${this.splitSourceWidth} × ${this.splitSourceHeight} 的图片做九宫格切图。`;
+    },
+    splitPlacement() {
+      if (!this.splitSourceImageElement || !this.splitCanvasSize) {
+        return null;
+      }
+
+      return getCoverPlacement(
+        this.splitSourceWidth,
+        this.splitSourceHeight,
+        this.splitCanvasSize,
+        this.splitCanvasSize,
+        this.splitOffsetX,
+        this.splitOffsetY,
+      );
+    },
+    splitPreviewScale() {
+      if (!this.splitCanvasSize) {
+        return 1;
+      }
+
+      return Math.min(1, 360 / this.splitCanvasSize);
+    },
+    splitPreviewStageStyle() {
+      const size = Math.round(this.splitCanvasSize * this.splitPreviewScale);
+      return {
+        width: `${size}px`,
+        height: `${size}px`,
+      };
+    },
+    splitPreviewImageStyle() {
+      if (!this.splitPlacement) {
+        return {};
+      }
+
+      return {
+        left: `${Math.round(this.splitPlacement.x * this.splitPreviewScale)}px`,
+        top: `${Math.round(this.splitPlacement.y * this.splitPreviewScale)}px`,
+        width: `${Math.round(this.splitPlacement.drawWidth * this.splitPreviewScale)}px`,
+        height: `${Math.round(this.splitPlacement.drawHeight * this.splitPreviewScale)}px`,
+      };
+    },
+    splitCanvasSummary() {
+      return this.splitCanvasSize ? `${this.splitCanvasSize} × ${this.splitCanvasSize}` : '未配置';
+    },
+    splitOffsetText() {
+      return `${Math.round(this.splitOffsetX)}, ${Math.round(this.splitOffsetY)}`;
+    },
+    splitTileSize() {
+      return this.splitCanvasSize ? Math.floor(this.splitCanvasSize / 3) : 0;
+    },
+    splitTileSummary() {
+      return this.splitTiles.length ? `${this.splitTileSize} × ${this.splitTileSize}` : '未生成';
+    },
+    splitGapText() {
+      return `${getNonNegativeIntegerOrFallback(this.splitGap, 0)}px`;
     },
     stitchVisibleItems() {
       return this.stitchMode === 'grid9' ? this.stitchItems.slice(0, 9) : this.stitchItems;
@@ -912,6 +1271,7 @@ export default {
     },
   },
   beforeDestroy() {
+    this.stopSplitDrag(true);
     this.stopStitchDrag(true);
     this.closeImageLightbox();
   },
@@ -919,8 +1279,85 @@ export default {
     isVisible(id) {
       return this.visibleToolIds.indexOf(id) !== -1;
     },
+    isErrorMessage(message) {
+      return /(失败|错误|请先|没有|不支持|必须|不能|请选择)/.test(String(message || ''));
+    },
     getSectionElement(id) {
       return id === 'image' ? this.$refs.image || null : null;
+    },
+    focusPasteZone(target) {
+      const refMap = {
+        editor: 'editorPasteZone',
+        split: 'splitPasteZone',
+        stitch: 'stitchPasteZone',
+      };
+      const element = this.$refs[refMap[target]];
+      if (element && typeof element.focus === 'function') {
+        element.focus();
+      }
+    },
+    async handlePasteImage(target, event) {
+      const baseNameMap = {
+        editor: 'pasted-image',
+        split: 'pasted-split',
+        stitch: 'pasted-stitch',
+      };
+      const imageFiles = extractImageFilesFromClipboard(event, baseNameMap[target] || 'pasted-image');
+
+      if (!imageFiles.length) {
+        if (target === 'editor') {
+          this.imageMessage = '剪贴板中没有可用图片。';
+        } else if (target === 'split') {
+          this.splitMessage = '剪贴板中没有可用图片。';
+        } else if (target === 'stitch') {
+          this.stitchMessage = '剪贴板中没有可用图片。';
+        }
+        return;
+      }
+
+      if (target === 'editor') {
+        await this.loadEditorImageFile(imageFiles[0]);
+        this.imageMessage = '已通过 Ctrl+V 粘贴图片。';
+        return;
+      }
+
+      if (target === 'split') {
+        await this.loadSplitImageFile(imageFiles[0]);
+        this.splitMessage = '已通过 Ctrl+V 粘贴切图图片。';
+        return;
+      }
+
+      if (target === 'stitch') {
+        await this.appendStitchFiles(imageFiles);
+        this.stitchMessage = `已通过 Ctrl+V 粘贴 ${imageFiles.length} 张图片。`;
+      }
+    },
+    async loadEditorImageFile(file) {
+      if (!file) {
+        this.clearImageTool();
+        this.imageMessage = '未选择图片。';
+        return;
+      }
+
+      if (!file.type || file.type.indexOf('image/') !== 0) {
+        this.clearImageTool();
+        this.imageMessage = '请选择标准图片文件。';
+        return;
+      }
+
+      const dataUrl = await readFileAsDataUrl(file);
+      const imageElement = await loadImageFromDataUrl(dataUrl);
+
+      this.imageFile = file;
+      this.imageFileName = file.name;
+      this.imageMimeType = file.type;
+      this.sourceImageDataUrl = dataUrl;
+      this.sourceImageElement = imageElement;
+      this.originalWidth = imageElement.naturalWidth || imageElement.width;
+      this.originalHeight = imageElement.naturalHeight || imageElement.height;
+      this.originalFileSize = file.size;
+      this.refreshEditorPreview();
+      this.clearResultOnly();
     },
     async handleImageFileChange(event) {
       const file = event && event.target && event.target.files ? event.target.files[0] : null;
@@ -938,26 +1375,8 @@ export default {
         return;
       }
 
-      if (!file.type || file.type.indexOf('image/') !== 0) {
-        this.clearImageTool();
-        this.imageMessage = '请选择标准图片文件。';
-        return;
-      }
-
       try {
-        const dataUrl = await readFileAsDataUrl(file);
-        const imageElement = await loadImageFromDataUrl(dataUrl);
-
-        this.imageFile = file;
-        this.imageFileName = file.name;
-        this.imageMimeType = file.type;
-        this.sourceImageDataUrl = dataUrl;
-        this.sourceImageElement = imageElement;
-        this.originalWidth = imageElement.naturalWidth || imageElement.width;
-        this.originalHeight = imageElement.naturalHeight || imageElement.height;
-        this.originalFileSize = file.size;
-        this.refreshEditorPreview();
-        this.clearResultOnly();
+        await this.loadEditorImageFile(file);
         this.imageMessage = '图片已加载，调整参数后点击处理。';
       } catch (error) {
         this.clearImageTool();
@@ -1106,6 +1525,342 @@ export default {
       this.lightboxImageUrl = '';
       this.lightboxImageAlt = '';
     },
+    clearSplitResultOnly() {
+      this.splitCompositeDataUrl = '';
+      this.splitCompositeBlob = null;
+      this.splitCompositeMimeType = '';
+      this.splitTiles = [];
+      this.splitZipGenerating = false;
+    },
+    resetSplitCropPosition() {
+      this.splitOffsetX = 0;
+      this.splitOffsetY = 0;
+      this.stopSplitDrag(true);
+      this.clearSplitResultOnly();
+      this.splitMessage = '已重置九宫格裁切位置。';
+    },
+    beginSplitDrag(event) {
+      if (!this.splitSourceImageElement || !event || typeof event.clientX !== 'number' || typeof event.clientY !== 'number') {
+        return;
+      }
+
+      event.preventDefault();
+      this.stopSplitDrag(true);
+      this.splitDragging = true;
+      this.splitDragState = {
+        startClientX: event.clientX,
+        startClientY: event.clientY,
+        startOffsetX: this.splitOffsetX,
+        startOffsetY: this.splitOffsetY,
+      };
+      window.addEventListener('mousemove', this.handleSplitDrag);
+      window.addEventListener('mouseup', this.stopSplitDrag);
+    },
+    handleSplitDrag(event) {
+      if (!this.splitDragState || !this.splitSourceImageElement) {
+        return;
+      }
+
+      const scale = this.splitPreviewScale || 1;
+      const nextOffsetX = this.splitDragState.startOffsetX + (event.clientX - this.splitDragState.startClientX) / scale;
+      const nextOffsetY = this.splitDragState.startOffsetY + (event.clientY - this.splitDragState.startClientY) / scale;
+      this.updateSplitOffset(nextOffsetX, nextOffsetY);
+    },
+    stopSplitDrag(silent = false) {
+      window.removeEventListener('mousemove', this.handleSplitDrag);
+      window.removeEventListener('mouseup', this.stopSplitDrag);
+
+      if (!silent && this.splitDragging) {
+        this.splitMessage = '已更新九宫格裁切位置。';
+      }
+
+      this.splitDragging = false;
+      this.splitDragState = null;
+    },
+    async loadSplitImageFile(file) {
+      if (!file) {
+        this.clearSplitTool();
+        return;
+      }
+
+      if (!file.type || file.type.indexOf('image/') !== 0) {
+        this.clearSplitTool();
+        this.splitMessage = '请选择标准图片文件。';
+        return;
+      }
+
+      const dataUrl = await readFileAsDataUrl(file);
+      const imageElement = await loadImageFromDataUrl(dataUrl);
+
+      this.stopSplitDrag(true);
+      this.splitFile = file;
+      this.splitFileName = file.name;
+      this.splitSourceMimeType = file.type;
+      this.splitSourceDataUrl = dataUrl;
+      this.splitSourceImageElement = imageElement;
+      this.splitSourceWidth = imageElement.naturalWidth || imageElement.width;
+      this.splitSourceHeight = imageElement.naturalHeight || imageElement.height;
+      this.splitSourceFileSize = file.size;
+      this.splitCanvasSize = Math.max(180, Math.min(this.splitSourceWidth, this.splitSourceHeight, 1080));
+      this.splitOffsetX = 0;
+      this.splitOffsetY = 0;
+      this.clearSplitResultOnly();
+    },
+    async handleSplitImageFileChange(event) {
+      const file = event && event.target && event.target.files ? event.target.files[0] : null;
+
+      if (!file) {
+        this.clearSplitTool();
+        return;
+      }
+
+      try {
+        await this.loadSplitImageFile(file);
+        this.splitMessage = '切图图片已加载，可拖动调整九宫格裁切位置。';
+      } catch (error) {
+        this.clearSplitTool();
+        this.splitMessage = error.message || '切图图片加载失败。';
+      }
+    },
+    updateSplitOffset(offsetX, offsetY) {
+      if (!this.splitSourceImageElement) {
+        return;
+      }
+
+      const placement = getCoverPlacement(
+        this.splitSourceWidth,
+        this.splitSourceHeight,
+        this.splitCanvasSize,
+        this.splitCanvasSize,
+        offsetX,
+        offsetY,
+      );
+
+      this.splitOffsetX = placement.offsetX;
+      this.splitOffsetY = placement.offsetY;
+      this.clearSplitResultOnly();
+    },
+    async generateSplitNineGrid() {
+      if (!this.splitSourceImageElement) {
+        this.splitMessage = '请先上传图片。';
+        return;
+      }
+
+      try {
+        const qualityPercent = Number(this.splitQualityPercent);
+        if (!Number.isInteger(qualityPercent) || qualityPercent < 1 || qualityPercent > 100) {
+          throw new Error('九宫格压缩质量必须是 1 到 100 之间的整数。');
+        }
+
+        const canvasSize = normalizePositiveInteger(this.splitCanvasSize);
+        if (canvasSize < 180) {
+          throw new Error('九宫格边长不能小于 180。');
+        }
+        const gap = getNonNegativeIntegerOrFallback(this.splitGap, 0);
+        const halfGap = gap / 2;
+
+        const placement = getCoverPlacement(
+          this.splitSourceWidth,
+          this.splitSourceHeight,
+          canvasSize,
+          canvasSize,
+          this.splitOffsetX,
+          this.splitOffsetY,
+        );
+        const mimeType = resolveOutputMimeType(this.splitOutputFormat, this.splitSourceMimeType);
+        const quality = qualityPercent / 100;
+        const canvas = document.createElement('canvas');
+        canvas.width = canvasSize;
+        canvas.height = canvasSize;
+        const context = canvas.getContext('2d');
+
+        if (!context) {
+          throw new Error('当前环境不支持九宫格切图。');
+        }
+
+        context.clearRect(0, 0, canvasSize, canvasSize);
+        if (mimeType === 'image/jpeg') {
+          context.fillStyle = '#ffffff';
+          context.fillRect(0, 0, canvasSize, canvasSize);
+        }
+
+        context.drawImage(
+          this.splitSourceImageElement,
+          placement.x,
+          placement.y,
+          placement.drawWidth,
+          placement.drawHeight,
+        );
+
+        const tileSize = Math.floor(canvasSize / 3);
+        const tiles = [];
+        const compositeCanvas = document.createElement('canvas');
+        compositeCanvas.width = tileSize * 3;
+        compositeCanvas.height = tileSize * 3;
+        const compositeContext = compositeCanvas.getContext('2d');
+
+        if (!compositeContext) {
+          throw new Error('当前环境不支持九宫格切图。');
+        }
+
+        compositeContext.clearRect(0, 0, compositeCanvas.width, compositeCanvas.height);
+        if (mimeType === 'image/jpeg') {
+          compositeContext.fillStyle = '#ffffff';
+          compositeContext.fillRect(0, 0, compositeCanvas.width, compositeCanvas.height);
+        }
+
+        for (let row = 0; row < 3; row += 1) {
+          for (let column = 0; column < 3; column += 1) {
+            const tileCanvas = document.createElement('canvas');
+            tileCanvas.width = tileSize;
+            tileCanvas.height = tileSize;
+            const tileContext = tileCanvas.getContext('2d');
+
+            if (!tileContext) {
+              throw new Error('当前环境不支持九宫格切图。');
+            }
+
+            if (mimeType === 'image/jpeg') {
+              tileContext.fillStyle = '#ffffff';
+              tileContext.fillRect(0, 0, tileSize, tileSize);
+            }
+
+            const insetLeft = column === 0 ? 0 : halfGap;
+            const insetRight = column === 2 ? 0 : halfGap;
+            const insetTop = row === 0 ? 0 : halfGap;
+            const insetBottom = row === 2 ? 0 : halfGap;
+            const drawWidth = Math.max(1, tileSize - insetLeft - insetRight);
+            const drawHeight = Math.max(1, tileSize - insetTop - insetBottom);
+
+            tileContext.drawImage(
+              canvas,
+              column * tileSize,
+              row * tileSize,
+              tileSize,
+              tileSize,
+              insetLeft,
+              insetTop,
+              drawWidth,
+              drawHeight,
+            );
+
+            const blob = await canvasToBlob(tileCanvas, mimeType, quality);
+            compositeContext.drawImage(tileCanvas, column * tileSize, row * tileSize, tileSize, tileSize);
+            tiles.push({
+              index: row * 3 + column,
+              dataUrl: tileCanvas.toDataURL(mimeType, quality),
+              blob,
+              mimeType: blob.type || mimeType,
+            });
+          }
+        }
+
+        const compositeBlob = await canvasToBlob(compositeCanvas, mimeType, quality);
+        this.splitCompositeDataUrl = compositeCanvas.toDataURL(mimeType, quality);
+        this.splitCompositeBlob = compositeBlob;
+        this.splitCompositeMimeType = compositeBlob.type || mimeType;
+        this.splitTiles = tiles;
+        this.splitMessage = `九宫格切图已生成，当前间隙 ${gap}px，可直接打包下载 ZIP（含整体图和 9 张单图）。`;
+      } catch (error) {
+        this.clearSplitResultOnly();
+        this.splitMessage = error.message || '九宫格切图失败。';
+      }
+    },
+    async downloadSplitZip() {
+      if (!this.splitTiles.length || !this.splitCompositeBlob) {
+        this.splitMessage = '请先生成九宫格切图。';
+        return;
+      }
+
+      this.splitZipGenerating = true;
+      this.splitMessage = '正在打包 ZIP，请稍候。';
+
+      try {
+        const JSZip = await getJSZipConstructor();
+        const zip = new JSZip();
+        const baseName = stripFileExtension(this.splitFileName || 'image');
+        const compositeExtension = getImageExtension(this.splitCompositeMimeType || 'image/png');
+
+        zip.file(`${baseName}-overall.${compositeExtension}`, this.splitCompositeBlob);
+        this.splitTiles.forEach((tile) => {
+          const extension = getImageExtension(tile.mimeType || 'image/png');
+          zip.file(`${baseName}-tile-${tile.index + 1}.${extension}`, tile.blob);
+        });
+
+        const zipBlob = await zip.generateAsync({ type: 'blob' });
+        const objectUrl = URL.createObjectURL(zipBlob);
+        const link = document.createElement('a');
+        link.href = objectUrl;
+        link.download = `${baseName}-nine-grid.zip`;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        URL.revokeObjectURL(objectUrl);
+        this.splitMessage = '九宫格 ZIP 已开始下载，包含整体图和 9 张单图。';
+      } catch (error) {
+        console.error('downloadSplitZip failed:', error);
+        this.splitMessage = `九宫格 ZIP 打包失败：${error && error.message ? error.message : '未知错误。'}`;
+      } finally {
+        this.splitZipGenerating = false;
+      }
+    },
+    clearSplitTool() {
+      this.stopSplitDrag(true);
+      this.splitFile = null;
+      this.splitFileName = '';
+      this.splitSourceMimeType = '';
+      this.splitSourceDataUrl = '';
+      this.splitSourceImageElement = null;
+      this.splitSourceWidth = 0;
+      this.splitSourceHeight = 0;
+      this.splitSourceFileSize = 0;
+      this.splitOutputFormat = 'keep';
+      this.splitQualityPercent = 92;
+      this.splitCanvasSize = 1080;
+      this.splitGap = 0;
+      this.splitOffsetX = 0;
+      this.splitOffsetY = 0;
+      this.splitDragging = false;
+      this.splitDragState = null;
+      this.clearSplitResultOnly();
+      this.splitMessage = '支持将当前图片裁切成 9 宫格，可拖拽调整裁切位置。';
+
+      if (this.$refs.splitFileInput) {
+        this.$refs.splitFileInput.value = '';
+      }
+    },
+    async appendStitchFiles(files) {
+      if (!files.length) {
+        this.clearStitchTool();
+        return;
+      }
+
+      const stitchItems = await Promise.all(files.map(async (file) => {
+        if (!file.type || file.type.indexOf('image/') !== 0) {
+          throw new Error('拼接仅支持标准图片文件。');
+        }
+
+        const dataUrl = await readFileAsDataUrl(file);
+        const imageElement = await loadImageFromDataUrl(dataUrl);
+
+        return {
+          id: createStitchItemId(),
+          name: file.name,
+          dataUrl,
+          imageElement,
+          mimeType: file.type,
+          fileSize: file.size,
+          width: imageElement.naturalWidth || imageElement.width,
+          height: imageElement.naturalHeight || imageElement.height,
+          offsetX: 0,
+          offsetY: 0,
+        };
+      }));
+
+      this.stopStitchDrag(true);
+      this.stitchItems = this.stitchItems.concat(stitchItems);
+      this.clearStitchResultOnly();
+    },
     async handleStitchFilesChange(event) {
       const files = event && event.target && event.target.files ? Array.from(event.target.files) : [];
 
@@ -1115,31 +1870,8 @@ export default {
       }
 
       try {
-        const stitchItems = await Promise.all(files.map(async (file) => {
-          if (!file.type || file.type.indexOf('image/') !== 0) {
-            throw new Error('拼接仅支持标准图片文件。');
-          }
-
-          const dataUrl = await readFileAsDataUrl(file);
-          const imageElement = await loadImageFromDataUrl(dataUrl);
-
-          return {
-            id: createStitchItemId(),
-            name: file.name,
-            dataUrl,
-            imageElement,
-            mimeType: file.type,
-            fileSize: file.size,
-            width: imageElement.naturalWidth || imageElement.width,
-            height: imageElement.naturalHeight || imageElement.height,
-            offsetX: 0,
-            offsetY: 0,
-          };
-        }));
-
-        this.stopStitchDrag(true);
-        this.stitchItems = stitchItems;
-        this.clearStitchResultOnly();
+        this.stitchItems = [];
+        await this.appendStitchFiles(files);
         this.stitchMessage = '拼接图片已加载，可在预览中拖拽调整每张图的位置。';
       } catch (error) {
         this.clearStitchTool();

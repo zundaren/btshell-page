@@ -575,7 +575,7 @@ export default {
         const { frameTimes, interval } = buildFrameTimes(startTime, endTime, fps);
         const gifHeight = Math.max(1, Math.round((gifWidth / this.videoWidth) * this.videoHeight));
         const frameDelay = Math.max(20, Math.round((interval * 1000) / speed));
-        const workerScript = this.$withBase('/toolbox/gif.worker.js');
+        const workerScript = this.$withBase('/toolbox-assets/gif.worker.js');
         const canvas = document.createElement('canvas');
         const context = canvas.getContext('2d');
 
