@@ -294,6 +294,18 @@
   word-break: break-all;
 }
 
+.ocr-loading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border: 1px dashed var(--borderColor);
+  border-radius: 12px;
+  background: rgba(17, 168, 205, 0.05);
+  color: var(--textColor);
+  font-size: 13px;
+}
+
 .image-toolbar {
   display: grid;
   grid-template-columns: minmax(0, 1.4fr) repeat(2, minmax(180px, 220px));

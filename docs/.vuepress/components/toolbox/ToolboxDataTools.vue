@@ -9,14 +9,14 @@
       <div class="tool-card__header">
         <h2>OCR 文字识别</h2>
         <div class="tool-card__actions">
-          <button type="button" @click="recognizeOcrText">识别</button>
-          <button type="button" class="ghost" @click="clearOcrResult">清空</button>
+          <button type="button" :disabled="ocrLoading" @click="recognizeOcrText">{{ ocrLoading ? '识别中...' : '识别' }}</button>
+          <button type="button" class="ghost" :disabled="ocrLoading" @click="clearOcrResult">清空</button>
         </div>
       </div>
       <div class="ocr-toolbar">
         <label class="ocr-toolbar__field">
           <span>识别语言</span>
-          <select v-model="ocrLanguage">
+          <select v-model="ocrLanguage" :disabled="ocrLoading">
             <option value="chs">简体中文</option>
             <option value="eng">英文</option>
             <option value="jpn">日文</option>
@@ -31,12 +31,17 @@
             class="tool-input tool-input--file"
             type="file"
             accept="image/png,image/jpeg,image/jpg,image/webp,image/bmp,application/pdf"
+            :disabled="ocrLoading"
             @change="handleOcrFileChange"
           >
         </label>
       </div>
       <div class="ocr-file-tip">
         {{ ocrFileName || '未选择文件。支持 png、jpg、webp、bmp、pdf。' }}
+      </div>
+      <div v-if="ocrLoading" class="ocr-loading">
+        <span class="video-preview__spinner" />
+        <span>识别中，请稍候...</span>
       </div>
       <textarea
         :value="ocrResult"
@@ -46,7 +51,7 @@
       />
       <div class="tool-card__footer">
         <span>{{ ocrMessage }}</span>
-        <button type="button" class="ghost" @click="copyText(ocrResult, 'ocr')">复制结果</button>
+        <button type="button" class="ghost" :disabled="ocrLoading || !ocrResult" @click="copyText(ocrResult, 'ocr')">复制结果</button>
       </div>
     </section>
 
@@ -247,6 +252,14 @@ import { writeTextToClipboard } from './clipboard';
 
 const OCR_SPACE_API_URL = 'https://api.ocr.space/parse/image';
 const OCR_SPACE_API_KEY = 'K87557472588957';
+const OCR_SUPPORTED_MIME_TYPES = [
+  'image/png',
+  'image/jpeg',
+  'image/jpg',
+  'image/webp',
+  'image/bmp',
+  'application/pdf',
+];
 const HASH_ALGORITHMS = ['MD5', 'SHA-1', 'SHA-256', 'SHA-384', 'SHA-512'];
 const HASH_GENERATORS = {
   MD5: (value) => CryptoJS.MD5(value).toString(),
@@ -524,6 +537,65 @@ function parseProperties(text) {
   return typeof rootValue === 'undefined' ? {} : rootValue;
 }
 
+function isSupportedOcrMimeType(type) {
+  return OCR_SUPPORTED_MIME_TYPES.indexOf(String(type || '').toLowerCase()) !== -1;
+}
+
+function getClipboardFileFromEvent(event) {
+  const clipboardData = event && event.clipboardData;
+  if (!clipboardData) {
+    return null;
+  }
+
+  if (clipboardData.items && clipboardData.items.length) {
+    for (const item of clipboardData.items) {
+      if (!item || item.kind !== 'file') {
+        continue;
+      }
+
+      const file = item.getAsFile ? item.getAsFile() : null;
+      if (file && isSupportedOcrMimeType(file.type)) {
+        return file;
+      }
+    }
+  }
+
+  if (clipboardData.files && clipboardData.files.length) {
+    for (const file of clipboardData.files) {
+      if (file && isSupportedOcrMimeType(file.type)) {
+        return file;
+      }
+    }
+  }
+
+  return null;
+}
+
+function createPastedOcrFile(file) {
+  if (!file) {
+    return null;
+  }
+
+  if (file.name) {
+    return file;
+  }
+
+  const extensionMap = {
+    'image/png': 'png',
+    'image/jpeg': 'jpg',
+    'image/jpg': 'jpg',
+    'image/webp': 'webp',
+    'image/bmp': 'bmp',
+    'application/pdf': 'pdf',
+  };
+  const extension = extensionMap[String(file.type || '').toLowerCase()] || 'bin';
+
+  return new File([file], `ocr-paste-${Date.now()}.${extension}`, {
+    type: file.type || 'application/octet-stream',
+    lastModified: Date.now(),
+  });
+}
+
 export default {
   name: 'ToolboxDataTools',
   props: {
@@ -537,6 +609,7 @@ export default {
       ocrLanguage: 'chs',
       ocrFile: null,
       ocrFileName: '',
+      ocrLoading: false,
       ocrResult: '',
       ocrMessage: '使用 OCR.Space 免费 API 识别图片或 PDF 文本。',
       qrCodeText: '',
@@ -570,6 +643,16 @@ export default {
       this.generateHashes();
     },
   },
+  mounted() {
+    if (typeof window !== 'undefined') {
+      window.addEventListener('paste', this.handleWindowPaste);
+    }
+  },
+  beforeDestroy() {
+    if (typeof window !== 'undefined') {
+      window.removeEventListener('paste', this.handleWindowPaste);
+    }
+  },
   methods: {
     isVisible(id) {
       return this.visibleToolIds.indexOf(id) !== -1;
@@ -577,14 +660,66 @@ export default {
     getSectionElement(id) {
       return this.$refs[id] || null;
     },
+    updateOcrFile(file, message) {
+      const normalizedFile = createPastedOcrFile(file);
+
+      this.ocrFile = normalizedFile || null;
+      this.ocrFileName = normalizedFile ? normalizedFile.name : '';
+      this.ocrResult = '';
+      this.ocrMessage = normalizedFile
+        ? message || '文件已选择，点击识别开始 OCR。'
+        : '使用 OCR.Space 免费 API 识别图片或 PDF 文本。';
+
+      if (this.$refs.ocrFileInput && !normalizedFile) {
+        this.$refs.ocrFileInput.value = '';
+      }
+    },
     handleOcrFileChange(event) {
       const file = event && event.target && event.target.files ? event.target.files[0] : null;
-      this.ocrFile = file || null;
-      this.ocrFileName = file ? file.name : '';
-      this.ocrResult = '';
-      this.ocrMessage = file ? '文件已选择，点击识别开始 OCR。' : '使用免费 API 识别图片或 PDF 文本。';
+      this.updateOcrFile(file, '文件已选择，点击识别开始 OCR。');
+    },
+    handleWindowPaste(event) {
+      if (!this.isVisible('ocr')) {
+        return;
+      }
+      if (this.ocrLoading) {
+        return;
+      }
+
+      const file = getClipboardFileFromEvent(event);
+      if (!file) {
+        return;
+      }
+
+      const ocrSection = this.$refs.ocr;
+      const activeElement = typeof document !== 'undefined' ? document.activeElement : null;
+      const activeInsideOcr = !!(
+        ocrSection
+        && activeElement
+        && typeof ocrSection.contains === 'function'
+        && ocrSection.contains(activeElement)
+      );
+      const activeIsEditableOutsideOcr = !!(
+        activeElement
+        && !activeInsideOcr
+        && (
+          activeElement.tagName === 'INPUT'
+          || activeElement.tagName === 'TEXTAREA'
+          || activeElement.isContentEditable
+        )
+      );
+
+      if (activeIsEditableOutsideOcr) {
+        return;
+      }
+
+      event.preventDefault();
+      this.updateOcrFile(file, '已从剪贴板读取文件，点击识别开始 OCR。');
     },
     async recognizeOcrText() {
+      if (this.ocrLoading) {
+        return;
+      }
       if (!this.ocrFile) {
         this.ocrResult = '';
         this.ocrMessage = '请先选择要识别的文件。';
@@ -600,6 +735,7 @@ export default {
       formData.append('OCREngine', '2');
 
       this.ocrResult = '';
+      this.ocrLoading = true;
       this.ocrMessage = '识别中...';
 
       try {
@@ -639,18 +775,16 @@ export default {
       } catch (error) {
         this.ocrResult = '';
         this.ocrMessage = error.message || 'OCR 识别失败。';
+      } finally {
+        this.ocrLoading = false;
       }
     },
     clearOcrResult() {
-      this.ocrLanguage = 'chs';
-      this.ocrFile = null;
-      this.ocrFileName = '';
-      this.ocrResult = '';
-      this.ocrMessage = '使用 OCR.Space 免费 API 识别图片或 PDF 文本。';
-
-      if (this.$refs.ocrFileInput) {
-        this.$refs.ocrFileInput.value = '';
+      if (this.ocrLoading) {
+        return;
       }
+      this.ocrLanguage = 'chs';
+      this.updateOcrFile(null);
     },
     async generateQrCode() {
       const text = this.qrCodeText.trim();
