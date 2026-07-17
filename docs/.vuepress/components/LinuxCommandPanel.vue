@@ -48,18 +48,6 @@
           {{ indexError }}
         </div>
         <template v-else-if="activeCommandSummary">
-          <header class="linux-command-header">
-            <div>
-              <div class="linux-command-header__eyebrow">Linux Command</div>
-              <h2 class="linux-command-header__title">{{ activeCommandSummary.title }}</h2>
-              <p class="linux-command-header__desc">{{ activeCommandSummary.description }}</p>
-            </div>
-            <div class="linux-command-header__meta">
-              <code>{{ activeCommandSummary.slug }}</code>
-              <span>{{ detailStateText }}</span>
-            </div>
-          </header>
-
           <div v-if="loadingDetail" class="linux-command-empty">
             正在加载 {{ activeCommandSummary.title }} 的详情...
           </div>
@@ -166,13 +154,6 @@ export default {
     },
     activeCommandSummary() {
       return this.commandIndex.find((command) => command.slug === this.activeCommandSlug) || null;
-    },
-    detailStateText() {
-      if (!this.metadata || !this.metadata.commandCount) {
-        return '本地文档';
-      }
-
-      return `本地 ${this.metadata.commandCount} 条命令`;
     },
     sourceSummary() {
       if (!this.metadata || !this.metadata.sourceCommit) {
